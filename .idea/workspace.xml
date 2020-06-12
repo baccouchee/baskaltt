@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35bb79cb-405c-435c-beca-9fa3f0b220c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/categorie/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/categorie/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventBundle/Entity/Categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventBundle/Entity/Categorie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventBundle/Resources/views/Default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventBundle/Resources/views/Default/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/images/omarEdition1.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/images/omarEdition1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/images/omarEdition2.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +78,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ZljpbTh4HZyVuaadJpl6zlXoTZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -162,12 +157,25 @@
       <workItem from="1591443215550" duration="4429000" />
       <workItem from="1591713832365" duration="10655000" />
       <workItem from="1591791288855" duration="11651000" />
-      <workItem from="1591927228297" duration="5083000" />
+      <workItem from="1591927228297" duration="5317000" />
     </task>
+    <task id="LOCAL-00001" summary="Commit 2">
+      <created>1592004864141</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592004864157</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Commit 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="458" y="179" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585535341940">
@@ -186,10 +194,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1591717182239" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1592004815640">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1592004859471">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1592004815640" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1592004859471" />
     <state x="720" y="276" key="ComposerCompositePathDialog" timestamp="1588555300089">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -246,10 +254,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="667" y="218" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1588299818912" />
-    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592004722342">
+    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592005004351">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1592004722342" />
+    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1592005004351" />
     <state x="413" y="24" key="com.intellij.troubleshooting.ui.CollectTroubleshootingInformationDialog" timestamp="1587244770526">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
