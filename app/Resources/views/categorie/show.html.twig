@@ -1,0 +1,43 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block content %}
+    <div class="content mt-3">
+        <div class="animated fadeIn">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong class="card-title" style="font-size: 20px;"> Catégorie numéro {{ categorie.id }} </strong>
+                        </div>
+                        <div class="card-body">
+                            <div class="vue-lists">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul style="font-size: 16px;">
+                                            <li>
+                                                <strong> Nom de la catégorie : </strong> {{ categorie.nomC }}
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <table>
+                                <tr>
+                                    <td>          <a href="{{ path('categorie_edit', { 'id': categorie.id }) }}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Edit</a>
+                                    </td>
+                                    <td>
+                                        {{ form_start(delete_form) }}
+                                        <input type="submit" value="Delete" class="btn btn-outline-danger">
+                                        {{ form_end(delete_form) }}</td>
+                                </tr>
+                            </table>
+                        </div></div></div></div></div>
+        <a href="{{ path('categorie_index') }}" class="btn btn-outline-secondary">Liste des catégorie</a>
+    </div>
+
+
+
+{% endblock %}

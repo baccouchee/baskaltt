@@ -1,0 +1,67 @@
+{% extends 'baseAdmin.html.twig' %}
+{% block titre %} Editer Evenement {% endblock %}
+
+{% block content %}
+    {{ form_start(edit_form) }}
+
+    <div class="row form-group">
+        <div class="col col-md-3"><label class=" form-control-label">Nom </label></div>
+        <div class="col-12 col-md-9">{{ form_widget(edit_form.nom, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+        <div class="col-12 col-md-9">
+        </div>
+    </div>
+
+    <div class="row form-group">
+
+        <div class="col col-md-3"><label class=" form-control-label">Catégorie </label></div>
+        <div class="col-12 col-md-9">{{ form_widget(edit_form.cat, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+        <div class="col-12 col-md-9">
+        </div>
+    </div>
+
+    <div class="row form-group">
+
+        <div class="col col-md-3"><label class=" form-control-label">Déscription </label></div>
+        <div class="col-12 col-md-9">{{ form_widget(edit_form.description, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+        <div class="col-12 col-md-9">
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col col-md-3"><label class=" form-control-label"> Date Début </label></div>
+        <div class="col-12 col-md-9">{{ form_widget(edit_form.dateDeb, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+        <div class="col-12 col-md-9">
+
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col col-md-3"><label class=" form-control-label"> Date Fin </label></div>
+        <div class="col-12 col-md-9">{{ form_widget(edit_form.dateFin, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+        <div class="col-12 col-md-9">
+
+        </div>
+    </div>
+    <div class="row form-group">
+
+        <div class="col col-md-3"><label class=" form-control-label">Emplacement </label></div>
+        <div class="col-12 col-md-9">{{ form_widget(edit_form.emplacement, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+        <div class="col-12 col-md-9">
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col col-md-3"><label class=" form-control-label">Image de l'évenement   </label></div>
+        <div class="col-12 col-md-9">{{ form_widget(edit_form.file, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+        <div class="col-12 col-md-9">
+
+        </div>
+    </div>
+
+    <div class="card-footer">
+        <button type="submit" class="btn btn-primary btn-sm" >
+            <i class="fa fa-dot-circle-o"></i> Envoyer
+        </button>
+
+        {{ form_end(edit_form) }}
+
+        <a href="{{ path('event_index') }}" class="btn btn-outline-secondary">Liste des événements</a>
+    </div>
+{% endblock %}

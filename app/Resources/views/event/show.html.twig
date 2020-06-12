@@ -1,0 +1,49 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block content %}
+    <div class="content mt-3">
+        <div class="animated fadeIn">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong class="card-title" style="font-size: 20px;"> Evénement numéro {{ event.id }} </strong>
+                        </div>
+                        <div class="card-body">
+                            <div class="vue-lists">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul style="font-size: 16px;">
+                                            <li>
+                                                <strong> Nom de Evenement : </strong> {{ event.nom }}
+                                            </li>
+                                            <li>  <strong> Catégorie de l'événement : </strong> {{ event.cat.nomC }}</li>
+                                            <li>  <strong> Description de l'événement : </strong> {{ event.description }}</li>
+                                            <li>  <strong> Date début de l'événement : </strong> {% if event.dateDeb %}{{ event.dateDeb|date('Y-m-d') }}{% endif %}</li>
+                                            <li>  <strong> Date fin de l'événement : </strong> {% if event.dateFin %}{{ event.dateFin|date('Y-m-d') }}{% endif %}</li>
+                                            <li>  <strong> Emplacement de l'événement : </strong> {{ event.emplacement }}</li>
+                                            <li>  <strong> Photo de l'événement : </strong> <img src="{{ asset('images/' ~ event.photo) }}"></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <table>
+                                <tr>
+                                    <td>          <a href="{{ path('event_edit', { 'id': event.id }) }}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Edit</a>
+                                    </td>
+                                    <td>
+                                        {{ form_start(delete_form) }}
+                                        <input type="submit" value="Delete" class="btn btn-danger btn-xs">
+                                        {{ form_end(delete_form) }}</td>
+                                </tr>
+                            </table>
+                        </div></div></div></div></div>
+        <a href="{{ path('event_index') }}" class="btn btn-outline-secondary">Liste des événements</a>
+    </div>
+
+
+
+{% endblock %}

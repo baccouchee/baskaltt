@@ -1,0 +1,48 @@
+{% extends 'baseFront.html.twig' %}
+
+{% block content %}
+
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                    <div class="ps-section__header pt-50">
+                        <h2 class="ps-section__title" data-mask="Club">- Créez Votre Club</h2>
+                   {{ form_start(form) }}
+                            <div class="form-group">
+                                <label>Nom Club <sub>*</sub></label>
+                                {{ form_widget(form.nomclub, { 'attr': {'class': 'form-control'} }) }}
+                            </div>
+                            <div class="form-group">
+                                <label>Emplacement <sub>*</sub></label>
+                                {{ form_widget(form.emplacement, { 'attr': {'class': 'form-control'} }) }}
+                            </div>
+                            <div class="form-group">
+                                <label>Résponsable <sub>*</sub></label>
+                                {{ form_widget(form.responsable, { 'attr': {'class': 'form-control'} }) }}
+                            </div>
+                            <div class="form-group">
+                                <label>Categorie <sub>*</sub></label>
+                                {{ form_widget(form.categorie, { 'attr': {'class': 'form-control'} }) }}
+                            </div>
+                            <div class="form-group mb-25">
+                                <label>Déscription <sub>*</sub></label>
+                               {{ form_widget(form.description, { 'attr': {'class': 'form-control'} }) }}
+                            </div>
+
+                            <div class="form-group mb-25">
+                                <label>Image <sub>*</sub></label>
+                            {{ form_widget(form.file,{'attr': { 'data-position':'bottom right'  } }  ) }}
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="ps-btn">Ajouter Club <i class="ps-icon-next" ></i></button>
+                            </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+    {{ form_end(form) }}
+{% endblock %}

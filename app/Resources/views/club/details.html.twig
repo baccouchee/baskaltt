@@ -1,0 +1,29 @@
+{% extends 'baseFront.html.twig' %}
+
+{% block content %}
+
+
+    <div class="ps-post--detail">
+        <div class="ps-post__thumbnail"><img src="images/blog/11.png" alt=""></div>
+        <div class="ps-post__header">
+            <h3 class="ps-post__title">{{ club.nomclub }}</h3>
+
+            <div class="ps-post__thumbnail"><a class="ps-post__overlay" href="#"></a><img src="{{ asset('images/' ~ club.image) }}"></div>
+        </div>
+        <div class="ps-post__content">
+            <blockquote>
+                <p>{{ club.emplacement }}</p>
+                <p>{{ club.description }}</p>
+                <a class="ps-btn" href="{{ path('club_ins', { 'id': club.id }) }}">INCRIPTION AU CLUB</a>
+            </blockquote>
+        </div>
+
+        <p class="ps-post__tags"><i class="fa fa-tags"></i><a href="blog-list.html">Club</a>,<a href="blog-list.html"> Bikes</a>,<a href="blog-list.html"> Location</a></p>
+            <div class="ps-post__social">
+
+            </div>
+
+
+    </div>
+
+{% endblock %}

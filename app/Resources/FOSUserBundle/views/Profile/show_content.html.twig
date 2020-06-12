@@ -1,0 +1,16 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="fos_user_user_show">
+    <p>{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
+    <p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
+    {% for reservation in reservations %}
+    <div class="ps-shoe--sidebar">
+
+        <div class="ps-shoe__content"><a class="ps-shoe__title" href="#">{{ reservation.idE.nom }}</a>
+            {% if reservation.idE.dateDeb %}{{ reservation.idE.dateDeb|date('Y-m-d') }}{% endif %}</p>
+           <p> <a class="ps-btn" href="{{ path('res_delete', { 'id': reservation.id }) }}">ANNULER</a></p>
+
+            <div class="ps-shoe__content"><p> <a class="ps-btn" href="#">LOUER</a></p></div>
+    </div>
+    {% endfor %}
+</div>

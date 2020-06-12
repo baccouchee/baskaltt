@@ -1,0 +1,48 @@
+
+{% extends 'baseAdmin.html.twig' %}
+{% block title %}Afficher un Club{% endblock %}
+{% block titre %}Afficher un Club{% endblock %}
+{% block content %}
+    <div class="content mt-3">
+        <div class="animated fadeIn">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong class="card-title" style="font-size: 20px;"> Club {{ club.id }} </strong>
+                        </div>
+                        <div class="card-body">
+                            <div class="vue-lists">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul style="font-size: 16px;">
+                                            <li>
+                                                <strong> Nom du Club : </strong> {{ club.nomclub }}
+                                            </li>
+                                            <li>  <strong> Emplacement: </strong> {{ club.emplacement }}</li>
+                                            <li>  <strong> Responsable : </strong> {{ club.responsable }}</li>
+                                            <li>  <strong> Categorie : </strong> {{ club.categorie }}</li>
+                                            <li>  <strong> Description : </strong> {{ club.description }}</li>
+                                            <li>  <strong> etat : </strong> {{ club.etat }}</li>
+                                            <li>  <strong> Photo du club : </strong> <img src="{{ asset('images/' ~ club.image) }}"></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <table>
+                                <tr>
+                                    <td>          <a href="{{ path('club_edit', { 'id': club.id }) }}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Edit</a>
+                                    </td>
+                                    <td>
+                                        {{ form_start(delete_form) }}
+                                        <input type="submit" value="Delete" class="btn btn-danger btn-xs">
+                                        {{ form_end(delete_form) }}</td>
+                                </tr>
+                            </table>
+                        </div></div></div></div></div>
+        <a href="{{ path('club_index') }}" class="btn btn-outline-secondary">Liste des Clubs</a>
+    </div>
+{% endblock %}

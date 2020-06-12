@@ -1,0 +1,59 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block content %}
+
+    <div class="content mt-3">
+        <div class="animated fadeIn">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong class="card-title"> Listes des Reservations </strong>
+                        </div>
+
+                        <div class="card-body">
+                            <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
+
+
+
+
+                                <thead>
+                                <tr>
+                                    <th>Nom</th>
+                                    <th>Email</th>
+                                    <th>Nom</th>
+                                    <th>Date</th>
+                                    <th>QrCode</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for reservation in reservations %}
+                                    <tr>
+                                        <td> {{ reservation.idU.username }}</td>
+                                        <td> {{ reservation.idU.email }}</td>
+                                        <td> {{ reservation.idE.nom }}</td>
+                                        <td>   {% if reservation.idE.dateDeb %}{{ reservation.idE.dateDeb|date('Y-m-d') }}{% endif %}</td>
+                                        <td> {{ reservation.qrcode }}</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div></div></div>
+
+
+    </div>
+    </div><!-- .animated -->
+    </div><!-- .content -->
+    <ul>
+        <li>
+
+        </li>
+    </ul>
+
+
+
+{% endblock %}

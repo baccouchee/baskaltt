@@ -1,0 +1,74 @@
+{% extends 'baseAdmin.html.twig' %}
+{% block titre %} Ajouter Evenement {% endblock %}
+{% block content %}
+
+    <div class="card-body card-block">
+
+
+        {{ form_start(form,{ 'attr': {'novalidate': 'nonvalidate'} }) }}
+        <div class="row form-group">
+            <div class="col col-md-3"><label class=" form-control-label">Nom </label></div>
+            <div class="col-12 col-md-9">{{ form_widget(form.nom, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+            <div class="col-12 col-md-9">
+             <div style="color: red">{{ form_errors(form.nom) }}</div>
+            </div>
+
+        </div>
+
+        <div class="row form-group">
+
+            <div class="col col-md-3"><label class=" form-control-label">Catégorie </label></div>
+            <div class="col-12 col-md-9">{{ form_widget(form.cat, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+            <div class="col-12 col-md-9">
+                <div style="color: red">{{ form_errors(form.cat) }}</div>
+            </div>
+
+        </div>
+
+        <div class="row form-group">
+
+            <div class="col col-md-3"><label class=" form-control-label">Déscription </label></div>
+            <div class="col-12 col-md-9">{{ form_widget(form.description, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+            <div class="col-12 col-md-9">
+                <div style="color: red"> {{ form_errors(form.description) }}</div>
+            </div>
+
+        </div>
+        <div class="row form-group">
+            <div class="col col-md-3"><label class=" form-control-label"> Date </label></div>
+            <div class="col-12 col-md-9">{{ form_widget(form.dateDeb, { 'attr': {'class': 'form-control'} }) }}
+                <small class="help-block form-text"></small></div>
+            <div class="col-12 col-md-9" style="color: red">  {{ form_errors(form.dateDeb) }}</div>
+        </div>
+        <div class="row form-group">
+            <div class="col col-md-3"><label class=" form-control-label"> Date Fin </label></div>
+            <div class="col-12 col-md-9">{{ form_widget(form.dateFin, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+            <div class="col-12 col-md-9">
+                <div style="color: red">  {{ form_errors(form.dateFin) }}</div>
+            </div>
+        </div>
+        <div class="row form-group">
+
+            <div class="col col-md-3"><label class=" form-control-label">Emplacement </label></div>
+            <div class="col-12 col-md-9">{{ form_widget(form.emplacement, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+            <div class="col-12 col-md-9">
+                <div style="color: red"> {{ form_errors(form.emplacement) }}</div>
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col col-md-3"><label class=" form-control-label">Image de l'évenement   </label></div>
+            <div class="col-12 col-md-9">{{ form_widget(form.file, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+            <div class="col-12 col-md-9">
+                <div style="color: red">  {{ form_errors(form.file) }}</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <button type="submit" value="Create" class="btn btn-primary btn-sm" >
+                <i class="fa fa-dot-circle-o"></i> Ajouter
+            </button>
+        </div>
+        {{ form_end(form) }}
+    </div>
+
+
+{% endblock %}

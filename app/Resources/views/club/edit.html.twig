@@ -1,0 +1,77 @@
+{% extends 'baseAdmin.html.twig' %}
+
+        {% block content %}
+
+            <div class="card-header">
+
+            </div>
+            <div class="card-header">
+                <strong> Editer un Club</strong> Détails
+            </div>
+            <div class="card-body card-block">
+            {{ form_start(edit_form) }}
+
+
+            <div class="row form-group">
+
+                <div class="col col-md-3"><label class=" form-control-label">NomClub  </label></div>
+                <div class="col-12 col-md-9">{{ form_widget(edit_form.nomclub) }}<small class="form-text text-muted"></small></div>
+                <div class="col-12 col-md-9">
+                </div>
+            </div>
+
+            <div class="row form-group">
+
+                <div class="col col-md-3"><label class=" form-control-label">emplacement  </label></div>
+                <div class="col-12 col-md-9">{{ form_widget(edit_form.emplacement) }}<small class="form-text text-muted"></small></div>
+                <div class="col-12 col-md-9">
+                </div>
+            </div>
+
+            <div class="row form-group">
+
+                <div class="col col-md-3"><label class=" form-control-label">responsable  </label></div>
+                <div class="col-12 col-md-9">{{ form_widget(edit_form.responsable) }}<small class="form-text text-muted"></small></div>
+                <div class="col-12 col-md-9">
+                </div>
+            </div>
+
+            <div class="row form-group">
+
+                <div class="col col-md-3"><label class=" form-control-label">type  </label></div>
+                <div class="col-12 col-md-9">{{ form_widget(edit_form.categorie) }}<small class="form-text text-muted"></small></div>
+                <div class="col-12 col-md-9">
+                </div>
+            </div>
+            <div class="row form-group">
+
+                <div class="col col-md-3"><label class=" form-control-label">emplacement  </label></div>
+                <div class="col-12 col-md-9">{{ form_widget(edit_form.description) }}<small class="form-text text-muted"></small></div>
+                <div class="col-12 col-md-9">
+                </div>
+            </div>
+            <div class="row form-group">
+
+                <div class="col col-md-3"><label class=" form-control-label"> image  </label></div>
+                <div class="col-12 col-md-9">{{ form_widget(edit_form.file) }}<small class="form-text text-muted"></small></div>
+                <div class="col-12 col-md-9">
+                </div>
+            </div>
+
+
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary btn-sm" >
+                    <i class="fa fa-dot-circle-o"></i> Envoyer
+                </button>
+            </div>
+            {{ form_end(edit_form) }}
+
+            <div class="card-footer">
+                {{ form_start(delete_form) }}
+                <input type="submit" value="Delete" class="btn btn-danger btn-xs" >
+                {{ form_end(delete_form) }}
+            </div>
+            <a href="{{ path('club_index') }}">Liste des Clubs</a>
+
+
+        {% endblock %}
