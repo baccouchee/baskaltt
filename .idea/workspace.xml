@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35bb79cb-405c-435c-beca-9fa3f0b220c0" name="Default Changelist" comment="">
+    <list default="true" id="35bb79cb-405c-435c-beca-9fa3f0b220c0" name="Default Changelist" comment="Commit 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +157,7 @@
       <workItem from="1591443215550" duration="4429000" />
       <workItem from="1591713832365" duration="10655000" />
       <workItem from="1591791288855" duration="11651000" />
-      <workItem from="1591927228297" duration="5317000" />
+      <workItem from="1591927228297" duration="5546000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 2">
       <created>1592004864141</created>
@@ -166,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592004864157</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit 2">
+      <created>1592005031409</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592005031409</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +185,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Commit 2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592005058719">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1592005058719" />
     <state x="458" y="179" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585535341940">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -194,18 +205,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1591717182239" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1592004859471">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1592005041076">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1592004859471" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1592005041076" />
     <state x="720" y="276" key="ComposerCompositePathDialog" timestamp="1588555300089">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="720" y="276" key="ComposerCompositePathDialog/0.0.1366.738@0.0.1366.738" timestamp="1588555300089" />
-    <state x="129" y="62" key="DiffContextDialog" timestamp="1592004774970">
+    <state x="129" y="62" width="1092" height="616" key="DiffContextDialog" timestamp="1592005147171">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="129" y="62" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1592004774970" />
+    <state x="129" y="62" width="1092" height="616" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1592005147171" />
     <state x="758" y="179" key="FileChooserDialogImpl" timestamp="1588555299074">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -214,22 +225,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="530" y="266" key="FrameworkEditDialogDimensionKey/0.0.1366.738@0.0.1366.738" timestamp="1587245282900" />
-    <state width="1323" height="253" key="GridCell.Tab.0.bottom" timestamp="1591970965520">
+    <state width="1323" height="253" key="GridCell.Tab.0.bottom" timestamp="1592005124320">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="253" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1591970965520" />
-    <state width="1323" height="253" key="GridCell.Tab.0.center" timestamp="1591970965520">
+    <state width="1323" height="253" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1592005124320" />
+    <state width="1323" height="253" key="GridCell.Tab.0.center" timestamp="1592005124320">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="253" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1591970965520" />
-    <state width="1323" height="253" key="GridCell.Tab.0.left" timestamp="1591970965519">
+    <state width="1323" height="253" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1592005124320" />
+    <state width="1323" height="253" key="GridCell.Tab.0.left" timestamp="1592005124319">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="253" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1591970965519" />
-    <state width="1323" height="253" key="GridCell.Tab.0.right" timestamp="1591970965520">
+    <state width="1323" height="253" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1592005124319" />
+    <state width="1323" height="253" key="GridCell.Tab.0.right" timestamp="1592005124320">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="253" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1591970965520" />
+    <state width="1323" height="253" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1592005124320" />
     <state x="469" y="204" key="NewPhpClassDialog" timestamp="1586772918228">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -254,10 +265,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="667" y="218" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1588299818912" />
-    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592005004351">
+    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592005145925">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1592005004351" />
+    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1592005145925" />
     <state x="413" y="24" key="com.intellij.troubleshooting.ui.CollectTroubleshootingInformationDialog" timestamp="1587244770526">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
