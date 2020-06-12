@@ -8,9 +8,11 @@
 
         <div class="ps-shoe__content"><a class="ps-shoe__title" href="#">{{ reservation.idE.nom }}</a>
             {% if reservation.idE.dateDeb %}{{ reservation.idE.dateDeb|date('Y-m-d') }}{% endif %}</p>
-           <p> <a class="ps-btn" href="{{ path('res_delete', { 'id': reservation.id }) }}">ANNULER</a></p>
-
-            <div class="ps-shoe__content"><p> <a class="ps-btn" href="#">LOUER</a></p></div>
+           <img src="{{ asset('images/' ~ reservation.idU.username ~ reservation.idE.nom ~ '.png') }}">
+            <br>
+            <br>
+            <p> <a class="ps-btn" href="{{ path('res_delete', { 'id': reservation.id }) }}">ANNULER</a></p></div>
+        <br>
     </div>
     {% endfor %}
 </div>

@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35bb79cb-405c-435c-beca-9fa3f0b220c0" name="Default Changelist" comment="" />
+    <list default="true" id="35bb79cb-405c-435c-beca-9fa3f0b220c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/categorie/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/categorie/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventBundle/Entity/Categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventBundle/Entity/Categorie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventBundle/Resources/views/Default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventBundle/Resources/views/Default/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/omarEdition1.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/images/omarEdition1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/omarEdition2.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +24,10 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="baskeltt" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -72,13 +85,16 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ZljpbTh4HZyVuaadJpl6zlXoTZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../PIDEV-master/Web" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -146,7 +162,7 @@
       <workItem from="1591443215550" duration="4429000" />
       <workItem from="1591713832365" duration="10655000" />
       <workItem from="1591791288855" duration="11651000" />
-      <workItem from="1591927228297" duration="598000" />
+      <workItem from="1591927228297" duration="5083000" />
     </task>
     <servers />
   </component>
@@ -170,10 +186,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1591717182239" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1592004815640">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1592004815640" />
     <state x="720" y="276" key="ComposerCompositePathDialog" timestamp="1588555300089">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="720" y="276" key="ComposerCompositePathDialog/0.0.1366.738@0.0.1366.738" timestamp="1588555300089" />
+    <state x="129" y="62" key="DiffContextDialog" timestamp="1592004774970">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="129" y="62" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1592004774970" />
     <state x="758" y="179" key="FileChooserDialogImpl" timestamp="1588555299074">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -182,22 +206,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="530" y="266" key="FrameworkEditDialogDimensionKey/0.0.1366.738@0.0.1366.738" timestamp="1587245282900" />
-    <state width="1323" height="28" key="GridCell.Tab.0.bottom" timestamp="1591797933260">
+    <state width="1323" height="253" key="GridCell.Tab.0.bottom" timestamp="1591970965520">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="28" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1591797933260" />
-    <state width="1323" height="28" key="GridCell.Tab.0.center" timestamp="1591797933260">
+    <state width="1323" height="253" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1591970965520" />
+    <state width="1323" height="253" key="GridCell.Tab.0.center" timestamp="1591970965520">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="28" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1591797933260" />
-    <state width="1323" height="28" key="GridCell.Tab.0.left" timestamp="1591797933259">
+    <state width="1323" height="253" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1591970965520" />
+    <state width="1323" height="253" key="GridCell.Tab.0.left" timestamp="1591970965519">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="28" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1591797933259" />
-    <state width="1323" height="28" key="GridCell.Tab.0.right" timestamp="1591797933260">
+    <state width="1323" height="253" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1591970965519" />
+    <state width="1323" height="253" key="GridCell.Tab.0.right" timestamp="1591970965520">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="28" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1591797933260" />
+    <state width="1323" height="253" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1591970965520" />
     <state x="469" y="204" key="NewPhpClassDialog" timestamp="1586772918228">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -222,14 +246,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="667" y="218" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1588299818912" />
+    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592004722342">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1592004722342" />
     <state x="413" y="24" key="com.intellij.troubleshooting.ui.CollectTroubleshootingInformationDialog" timestamp="1587244770526">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="24" key="com.intellij.troubleshooting.ui.CollectTroubleshootingInformationDialog/0.0.1366.738@0.0.1366.738" timestamp="1587244770526" />
-    <state x="637" y="424" width="672" height="658" key="run.anything.popup" timestamp="1591791377033">
+    <state x="637" y="424" width="672" height="658" key="run.anything.popup" timestamp="1591968269131">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="637" y="424" width="672" height="658" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1591791377033" />
+    <state x="637" y="424" width="672" height="658" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1591968269131" />
     <state x="346" y="59" key="search.everywhere.popup" timestamp="1586703723629">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

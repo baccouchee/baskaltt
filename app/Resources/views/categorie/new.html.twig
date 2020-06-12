@@ -9,6 +9,7 @@
         <div class="row form-group">
             <div class="col col-md-3"><label class=" form-control-label">Nom </label></div>
             <div class="col-12 col-md-9">{{ form_widget(form.nomC, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+            <div style="color: red"> {{ form_errors(form.nomC) }}</div>
             <div class="col-12 col-md-9">
             </div>
         </div>

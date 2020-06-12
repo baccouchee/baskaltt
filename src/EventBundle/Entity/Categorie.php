@@ -3,6 +3,7 @@
 namespace EventBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Categorie
@@ -25,6 +26,7 @@ class Categorie
      * @var string
      *
      * @ORM\Column(name="nomC", type="string", length=255)
+     * @Assert\NotBlank(message="Le champ nom est obligatoire")
      */
     private $nomC;
 
