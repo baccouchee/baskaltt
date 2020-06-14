@@ -1,3 +1,7 @@
+baskel:
+    resource: "@BaskelBundle/Resources/config/routing.yml"
+    prefix:   /
+
 club_club:
     resource: "@ClubBundle/Controller/ClubController.php"
     type:     annotation

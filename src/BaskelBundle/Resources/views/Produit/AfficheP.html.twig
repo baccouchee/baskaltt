@@ -1,0 +1,78 @@
+{% extends 'front/layoutfront.html.twig' %}
+
+        {% block content %}
+
+            <main class="ps-main">
+                <div class="ps-products-wrap pt-80 pb-80">
+                    <div class="ps-products" data-mh="product-listing">
+                        <div class="ps-product__columns">
+                            {% for e in produit %}
+                            <div class="ps-product__column">
+                                <div class="ps-shoe mb-30">
+                                    <div class="ps-shoe__thumbnail"><a class="ps-shoe__favorite" href="#"><i class="ps-icon-heart"></i></a><img src="{{ asset('uploads/images/' ~ e.image) }}" alt=""><a class="ps-shoe__overlay" href="{{ path('baskel_afficheDetail',{'id':e.id}) }}"></a>
+                                    </div>
+                                    <div class="ps-shoe__content">
+
+                                        <div class="ps-shoe__detail"><a class="ps-shoe__name" href="#">{{e.nom}}</a>
+                                            <p class="ps-shoe__categories"><a href="#">{{e.description}}</a>,<a href="#"> Stock : {{ e.quantite }}</a></p><span class="ps-shoe__price"> £ {{ e.prix }}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             {% endfor %}
+                        </div>
+                        <div class="ps-product-action">
+
+                            <div class="ps-pagination">
+                                <ul class="pagination">
+                                    <div class="navigation">
+                                        {{ knp_pagination_render(produit) }}
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ps-sidebar" data-mh="product-listing">
+                        <aside class="ps-widget--sidebar ps-widget--category">
+                            <div class="ps-widget__header">
+                                <h3>Category</h3>
+                            </div>
+                            <div class="ps-widget__content">
+                                <ul class="ps-list--checked">
+                                    {% for j in categoriep %}
+
+                                    <li><a href="{{ path('baskel_filtreproduit',{'id':j.id}) }}">{{ j.name }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div></aside>
+                        {#<aside class="ps-widget--sidebar ps-widget--filter">
+                            <div class="ps-widget__header">
+                                <h3>Price</h3>
+                            </div>
+                            <div class="ps-widget__content">
+                                <div class="ac-slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-default-min="300" data-default-max="2000" data-max="3450" data-step="50" data-unit="$"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span></div>
+                                <p class="ac-   slider__meta">Price:<span class="ac-slider__value ac-slider__min">$0</span>-<span class="ac-slider__value ac-slider__max">$3450</span></p><a class="ac-slider__filter ps-btn" href="#">Filter</a>
+                            </div>
+
+                        </aside>#}
+                        <aside>
+                            <div class="ps-product__filter">
+                                <div class="btn-group ps-dropdown" ><a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><div class="ps-widget__header"><h3>Sort By<i class="fa fa-angle-down"></i></h3></div></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="menu-item menu-item-has-children dropdown"><a >Home</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="{{ path('baskel_triproduit',{'id':"4"}) }}">Date</a></li>
+                                                <li class="menu-item"><a href="{{ path('baskel_triproduit',{'id':"1"}) }}">Name</a></li>
+                                                <li class="menu-item"><a href="{{ path('baskel_triproduit',{'id':"2"}) }}">Price (Low to High)</a></li>
+                                                <li class="menu-item"><a href="{{ path('baskel_triproduit',{'id':"3"}) }}">Price (High to Low)</a></li>
+                                            </ul></li></ul>
+                                </div></div>
+                        </aside>
+
+                    </div>
+                </div></main>
+
+
+
+
+        {% endblock %}

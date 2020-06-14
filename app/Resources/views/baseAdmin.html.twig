@@ -75,12 +75,13 @@
                 </li>
 
                 <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Gestion des commandes </a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Gestion des produits </a>
                     <ul class="sub-menu children dropdown-menu">
 
-                        <li><i class="fa fa-table"></i><a href="tables-commande.html">Liste des commandes </a></li>
-                        <li><i class="fa fa-table"></i><a href="ajout-commande.html">Ajouter une commande </a></li>
-
+                        <li><i class="fa fa-table"></i><a href="{{ path('baskel_ajoutProduit')}}">Ajouter un produit</a></li>
+                        <li><i class="fa fa-table"></i><a href="{{ path('baskel_afficheProduitBack')}}">Liste des produits</a></li>
+                        <li><i class="fa fa-table"></i><a href="{{ path('baskel_ajoutCategorie')}}">Ajouter une categorie</a></li>
+                        <li><i class="fa fa-table"></i><a href="{{ path('baskel_afficheCategorie')}}">Liste des categories</a></li>
                     </ul>
                 </li>
 
