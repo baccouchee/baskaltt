@@ -39,7 +39,7 @@
                             </div>
                             <h1>{{produit.nom}}</h1>
                             <p class="ps-product__category"><a href="#">{{produit.idCategorie}}</a></p>
-                            <h3 class="ps-product__price">£ {{produit.prix}} </h3>
+                            <h3 class="ps-product__price"> {{produit.prix}} TND</h3>
                             <p class="ps-product__category"> {{produit.quantite}} items left</p>
                             <div class="ps-product__block ps-product__quickview">
                                 <h4>QUICK DESCRIPTION</h4>
@@ -47,7 +47,7 @@
                             </div>
 
 
-                            <div class="ps-product__shopping"><a class="ps-btn mb-10" >Add to cart<i class="ps-icon-next"></i></a>
+                            <div class="ps-product__shopping" ><a class="ps-btn mb-10" href="{{ path('produit_cart', { 'id': produit.id }) }}">Add to cart<i class="ps-icon-next"></i></a>
 
 
                                     {% set p=0 %}

@@ -35,8 +35,8 @@ class Produit
      * @Assert\NotBlank
      * @ORM\Column(name="nom", type="string", length=10)
      * @Assert\Length(
-     *      min = 5,
-     *      max = 10,
+     *      min = 1,
+     *      max = 1000,
      *      minMessage = "the name must be at least {{ limit }} characters long",
      *      maxMessage = "the name cannot be longer than {{ limit }} characters"
      *     )
@@ -48,7 +48,7 @@ class Produit
      * @Assert\NotBlank
      * @ORM\Column(name="reference", type="string", length=7)
      *      * @Assert\Length(
-     *      min = 7,
+     *      min = 1,
      *      max = 7,
      *      minMessage = "the reference must be  {{ limit }} characters long",
      *      maxMessage = "the reference must be  {{ limit }} characters long"
@@ -74,7 +74,7 @@ class Produit
      * @Assert\NotBlank
      * @Assert\Range(
      *      min = 1,
-     *      max = 24,
+     *      max =1000,
      *      minMessage = "You must be at least {{ limit }} to enter",
      *      maxMessage = "You cannot be more than {{ limit }} to enter"
      * )
@@ -86,7 +86,7 @@ class Produit
      *
      * @ORM\Column(name="prix", type="float")
      * @Assert\NotBlank
-     * @Assert\Range(min=20,max=200)
+     * @Assert\Range(min=20)
      */
     private $prix;
 

@@ -32,8 +32,8 @@ class CategorieP
      *
      * @ORM\Column(name="name", type="string", length=10)
      *      *      * @Assert\Length(
-     *      min = 5,
-     *      max = 10,
+     *      min = 2,
+     *      max = 100,
      *      minMessage = "the reference must be  {{ limit }} characters long",
      *      maxMessage = "the reference must be  {{ limit }} characters long"
      *     )

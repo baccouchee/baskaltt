@@ -2,61 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35bb79cb-405c-435c-beca-9fa3f0b220c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Resources/views/Back/layoutBack.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/views/front/layoutFront.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/views/registration.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/ChtbaskelBundle.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Controller/DefaultController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Controller/StationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Entity/Location.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Entity/Station.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Form/StationType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Repository/LocationRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Repository/StationRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/config/routing.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/config/services.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/views/Default/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/views/Station/AfficherMS.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/views/Station/AfficherMapFront.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/views/Station/AfficherMapLocFront.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/views/Station/AjoutS.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/views/Station/AjouterS.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/views/Station/InfoWinShow.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/views/Station/ModifierS.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Tests/Controller/StationControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ChtbaskelBundle/Controller/DefaultControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/back/images/BANN-WEB-gestes-barriere-1505.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/back/images/borne_velo_violet@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/back/images/filter_map_bike.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/back/images/filter_map_bike_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/back/images/geolocSearch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/back/images/marker_favo_legend@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/back/images/velo_meca_green@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/BANN-WEB-gestes-barriere-1505.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/New-Text-Document.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/borne_velo_violet@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/filter_map_bike.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/filter_map_bike_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/filter_map_terminal_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/geolocSearch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/marker_favo_legend@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/velo_meca_green@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/baskeltt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/baskeltt.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/baseFrontProduit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Entity/Commande.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Entity/LigneCommande.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Entity/PanierLigne.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Entity/Wish.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Repository/CommandeRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Repository/LigneCommandeRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Repository/PanierLigneRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Repository/WishRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/config/produit.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/config/produitF.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/cart.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/commande.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/commandeBack.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/detailsCommande.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/wish.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/uploads/images/2a68135a42e9c65f196f2b1bcf3a8ab8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/uploads/images/47f0d5f4f2449290722ac5013043abb7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/uploads/images/490020770e3c455622ab91ac2cfe3530.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/uploads/images/4dce8121e5404f69262b49a6a5e456d7.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/baseAdmin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/baseAdmin.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/baseFront.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/baseFront.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/front/layoutfront.html.twig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaskelBundle/Controller/ProduitController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaskelBundle/Controller/ProduitController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaskelBundle/Entity/CategorieP.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaskelBundle/Entity/CategorieP.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaskelBundle/Entity/Produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaskelBundle/Entity/Produit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaskelBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/config/routing.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheDetail.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheDetail.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheDetailL.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheDetailL.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheLike.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheLike.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheP.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheP.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,20 +149,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Resources/views" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\baskeltt\app\Resources\views" />
-      <recent name="C:\wamp64\www\baskeltt\app\Resources\views\front" />
-      <recent name="C:\wamp64\www\baskeltt\src\ChtbaskelBundle" />
-      <recent name="C:\wamp64\www\baskeltt\src\BaskelBundle" />
-      <recent name="C:\wamp64\www\baskeltt\src\ClubBundle\Form" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\baskeltt\app\Resources\views\event" />
       <recent name="C:\wamp64\www\baskeltt\app\Resources\FOSUserBundle\views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\baskeltt\src\BaskelBundle\Resources\views\Produit" />
+      <recent name="C:\wamp64\www\baskeltt\src\BaskelBundle\Repository" />
+      <recent name="C:\wamp64\www\baskeltt\src\BaskelBundle\Entity" />
+      <recent name="C:\wamp64\www\baskeltt\app\Resources\views" />
+      <recent name="C:\wamp64\www\baskeltt\app\Resources\views\front" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -245,7 +219,8 @@
       <workItem from="1592053895831" duration="7046000" />
       <workItem from="1592062729713" duration="5479000" />
       <workItem from="1592155624217" duration="6227000" />
-      <workItem from="1592222898639" duration="913000" />
+      <workItem from="1592222898639" duration="14355000" />
+      <workItem from="1592238784591" duration="2854000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 2">
       <created>1592004864141</created>
@@ -275,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592155091297</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Commit location">
+      <created>1592223937191</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1592223937191</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,17 +278,18 @@
     <MESSAGE value="Commit 2" />
     <MESSAGE value="Commit 3" />
     <MESSAGE value="Commit produit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit produit" />
+    <MESSAGE value="Commit location" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit location" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592005058719">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1592005058719" />
-    <state x="458" y="179" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585535341940">
+    <state x="458" y="179" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592226847981">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="458" y="179" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1585535341940" />
+    <state x="458" y="179" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1592226847981" />
     <state x="485" y="88" key="#com.intellij.ide.util.MemberChooser" timestamp="1588419771462">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -339,22 +322,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="530" y="266" key="FrameworkEditDialogDimensionKey/0.0.1366.738@0.0.1366.738" timestamp="1587245282900" />
-    <state width="1323" height="249" key="GridCell.Tab.0.bottom" timestamp="1592176717749">
+    <state width="1323" height="149" key="GridCell.Tab.0.bottom" timestamp="1592237517475">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="249" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1592176717749" />
-    <state width="1323" height="249" key="GridCell.Tab.0.center" timestamp="1592176717749">
+    <state width="1323" height="149" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1592237517475" />
+    <state width="1323" height="149" key="GridCell.Tab.0.center" timestamp="1592237517475">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="249" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1592176717749" />
-    <state width="1323" height="249" key="GridCell.Tab.0.left" timestamp="1592176717749">
+    <state width="1323" height="149" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1592237517475" />
+    <state width="1323" height="149" key="GridCell.Tab.0.left" timestamp="1592237517475">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="249" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1592176717749" />
-    <state width="1323" height="249" key="GridCell.Tab.0.right" timestamp="1592176717749">
+    <state width="1323" height="149" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1592237517475" />
+    <state width="1323" height="149" key="GridCell.Tab.0.right" timestamp="1592237517475">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="249" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1592176717749" />
+    <state width="1323" height="149" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1592237517475" />
     <state x="469" y="204" key="NewPhpClassDialog" timestamp="1586772918228">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -363,38 +346,38 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="242" height="198" key="RunAnythingAction_Filter_Popup/0.0.1366.738@0.0.1366.738" timestamp="1585694127830" />
-    <state x="177" y="23" width="998" height="708" key="SettingsEditor" timestamp="1592156009328">
+    <state x="177" y="23" width="998" height="708" key="SettingsEditor" timestamp="1592226943161">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="177" y="23" width="998" height="708" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1592156009328" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1585517007211">
+    <state x="177" y="23" width="998" height="708" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1592226943161" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1592227522654">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.738@0.0.1366.738" timestamp="1585517007211" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.738@0.0.1366.738" timestamp="1592227522654" />
     <state x="525" y="365" key="SymfonyPathDialog" timestamp="1591403825093">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="525" y="365" key="SymfonyPathDialog/0.0.1366.738@0.0.1366.738" timestamp="1591403825093" />
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1592155095954">
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1592223942054">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1592155095954" />
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1592223942054" />
     <state x="667" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1588299818913">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="667" y="218" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1588299818912" />
-    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592223830441">
+    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592242287820">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1592223830441" />
+    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1592242287820" />
     <state x="413" y="24" key="com.intellij.troubleshooting.ui.CollectTroubleshootingInformationDialog" timestamp="1587244770526">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="24" key="com.intellij.troubleshooting.ui.CollectTroubleshootingInformationDialog/0.0.1366.738@0.0.1366.738" timestamp="1587244770526" />
-    <state x="637" y="424" width="672" height="658" key="run.anything.popup" timestamp="1592223034957">
+    <state x="333" y="93" width="672" height="658" key="run.anything.popup" timestamp="1592237336056">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="637" y="424" width="672" height="658" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1592223034957" />
+    <state x="333" y="93" width="672" height="658" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1592237336056" />
     <state x="346" y="59" key="search.everywhere.popup" timestamp="1586703723629">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

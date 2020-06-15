@@ -3,8 +3,13 @@
 namespace BaskelBundle\Controller;
 
 use BaskelBundle\Entity\CategorieP;
+use BaskelBundle\Entity\Wish;
+use BaskelBundle\Entity\PanierLigne;
+use BaskelBundle\Entity\LigneCommande;
+use BaskelBundle\Entity\Commande;
 use BaskelBundle\Entity\Likes;
 use BaskelBundle\Entity\Produit;
+use EventBundle\Entity\Categorie;
 use BaskelBundle\Form\ProduitType;
 use BaskelBundle\Form\CategoriePType;
 use app\Form\SearchForm;
@@ -33,7 +38,7 @@ use CMEN\GoogleChartsBundle\GoogleCharts\Charts\Histogram;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 use Symfony\Component\Serializer\Serializer;
 use Slim\Flash\Messages;
-use EventBundle\Entity\Categorie;
+
 
 
 class ProduitController extends Controller
@@ -659,6 +664,338 @@ class ProduitController extends Controller
 
 
         }
+
+    /**
+     *Add a produit to wish
+     *
+     */
+    public function wishAction(Request $request, Produit $produit)
+    {
+        $wish = new Wish();
+        $user = $this->container->get('security.token_storage')->getToken()->getUser();
+        $user->getId();
+        $routeParams = $request->attributes->get('_route_params');
+        $produit->getId();
+        $name = $produit->getNom();
+        $wish->setIdUser($user);
+        $wish->setIdProduit($produit);
+        $em = $this->getDoctrine()->getManager();
+        $x = $em->getRepository('BaskelBundle:Wish')->findOneBy(array('idProduit' => $produit, 'idUser' => $user));
+        if ($x == null) {
+
+
+            $em1 = $this->getDoctrine()->getManager();
+            $em1->persist($wish);
+            $em1->flush();
+            $this->addFlash('success', 'Produit ajouté à votre wishlist !');
+
+        } else {
+            $this->addFlash('success', 'Ce produit est déja dans votre wishlist');
+        }
+        $em2 = $this->getDoctrine()->getManager();
+
+        $wishs = $em2->getRepository('BaskelBundle:Wish')->findAll();
+        $categories = $em2->getRepository('EventBundle:Categorie')->findAll();
+        $categoriep = $em2->getRepository('BaskelBundle:CategorieP')->findAll();
+        return $this->render('@Baskel/Produit/wish.html.twig', array(
+            'wishs' => $wishs,
+            'categories' => $categories,
+            'categoriep' => $categoriep,
+        ));
+    }
+
+
+    /**
+     * Finds and displays a wish entity in front.
+     *
+     */
+    public function wishlistAction()
+    {
+        $user = $this->container->get('security.token_storage')->getToken()->getUser();
+        $user->getId();
+        $em2 = $this->getDoctrine()->getManager();
+        $wishs = $em2->getRepository('BaskelBundle:Wish')->findBy(array('idUser' => $user));;
+        $produit = $em2->getRepository('BaskelBundle:Produit')->findAll();
+        $categories = $em2->getRepository('EventBundle:Categorie')->findAll();
+        $categoriep = $em2->getRepository('BaskelBundle:CategorieP')->findAll();
+        return $this->render('@Baskel/Produit/wish.html.twig', array(
+            'produit' => $produit,
+            'wishs' => $wishs,
+            'categories' => $categories,
+            'categoriep' => $categoriep
+
+        ));
+    }
+
+    /**
+     * Finds and deletes a wish entity in front.
+     *
+     */
+    public function deleteWishAction(Request $request, Wish $wish)
+    {
+
+        $id_wish = $request->get('id');
+
+        $em = $this->getDoctrine()->getManager();
+        $wish = $em->getRepository(Wish::class)->find($id_wish);
+        $em->remove($wish);
+        $em->flush();
+        $this->addFlash('success', 'Produit retiré de votre wishlist !');
+
+
+        return $this->redirectToRoute('produit_wishlist');
+    }
+
+    /**
+     * Finds and displays a ligne_commande entity in front.
+     *
+     */
+    public function cartAction()
+    {
+        $user = $this->container->get('security.token_storage')->getToken()->getUser();
+        $user->getId();
+        $em2 = $this->getDoctrine()->getManager();
+        $carts = $em2->getRepository('BaskelBundle:LigneCommande')->findBy(array('idUser' => $user));;
+        $produit = $em2->getRepository('BaskelBundle:Produit')->findAll();
+        $categories = $em2->getRepository('EventBundle:Categorie')->findAll();
+        return $this->render('@Baskel/Produit/cart.html.twig', array(
+            'produit' => $produit,
+            'carts' => $carts,
+            'categories' => $categories
+
+        ));
+    }
+
+    /**
+     *Add a produit to cart
+     *
+     */
+    public function addToCartAction(Request $request, Produit $produit)
+    {
+        $cart = new LigneCommande();
+        $user = $this->container->get('security.token_storage')->getToken()->getUser();
+        $user->getId();
+        $routeParams = $request->attributes->get('_route_params');
+        $produit->getId();
+        $name = $produit->getNom();
+        $cart->setIdUser($user);
+        $cart->setIdProduit($produit);
+        $em = $this->getDoctrine()->getManager();
+        $x = $em->getRepository('BaskelBundle:LigneCommande')->findOneBy(array('idProduit' => $produit, 'idUser' => $user));
+        if ($x == null) {
+            $cart->setQuantite(1);
+            $em1 = $this->getDoctrine()->getManager();
+            $em1->persist($cart);
+            $em1->flush();
+            $this->addFlash('success', 'Produit ajouté à votre panier !');
+
+
+        } else {
+
+            $em1 = $this->getDoctrine()->getManager();
+            $cart = $em1->getRepository('BaskelBundle:LigneCommande')->findOneBy(array('idProduit' => $produit, 'idUser' => $user));
+            $cart->setQuantite($cart->getQuantite() + 1);
+            $em1->flush();
+            $this->addFlash('success', 'La quantité a été mise à jour !');
+        }
+
+        $panier = new PanierLigne();
+        $user = $this->container->get('security.token_storage')->getToken()->getUser();
+        $user->getId();
+        $routeParams = $request->attributes->get('_route_params');
+        $produit->getId();
+        $name = $produit->getNom();
+        $panier->setIdUser($user);
+        $panier->setIdProduit($produit);
+        $em3 = $this->getDoctrine()->getManager();
+        $x = $em3->getRepository('BaskelBundle:PanierLigne')->findOneBy(array('idProduit' => $produit, 'idUser' => $user, 'idC' => null ));
+        if ($x == null) {
+            $panier->setQuantite(1);
+            $em4 = $this->getDoctrine()->getManager();
+            $em4->persist($panier);
+            $em4->flush();
+
+
+        } else {
+
+            $em4 = $this->getDoctrine()->getManager();
+            $panier = $em4->getRepository('BaskelBundle:PanierLigne')->findOneBy(array('idProduit' => $produit, 'idUser' => $user, 'idC' => null ));
+            $panier->setQuantite($cart->getQuantite() + 1);
+            $em4->flush();
+        }
+
+        $em2 = $this->getDoctrine()->getManager();
+
+        $carts = $em2->getRepository('BaskelBundle:LigneCommande')->findAll();
+        return $this->redirectToRoute('produitF_index');
+
+    }
+
+    /**
+     * Delete a lignecommande entity in front.
+     *
+     */
+    public function deleteCartAction(Request $request, LigneCommande $ligneCommande)
+    {
+
+        $id_cart = $request->get('id');
+
+        $em = $this->getDoctrine()->getManager();
+        $ligneCommande = $em->getRepository(LigneCommande::class)->find($id_cart);
+        $em->remove($ligneCommande);
+        $em->flush();
+        $this->addFlash('success', 'Produit retiré de votre panier !');
+
+        $id_cart = $request->get('id');
+
+        $em = $this->getDoctrine()->getManager();
+        $ligneCommande = $em->getRepository(PanierLigne::class)->find($id_cart);
+        $em->remove($ligneCommande);
+        $em->flush();
+        return $this->redirectToRoute('produit_viewC');
+
+    }
+
+    /**
+     * Confirmer une commande in front
+     *
+     */
+    public function confirmCartAction(Request $request)
+    {
+
+
+        $total = $request->query->get('tot');
+        $commande = new Commande();
+        $user = $this->container->get('security.token_storage')->getToken()->getUser();
+        $user->getId();
+        $commande->setIdUser($user);
+        $commande->setEtat("En cours de traitement");
+        $commande->setTotal($total);
+        $em1 = $this->getDoctrine()->getManager();
+        $em1->persist($commande);
+        $em1->flush();
+        $panier = new PanierLigne();
+        $em4 = $this->getDoctrine()->getManager();
+        $panier = $em4->getRepository('BaskelBundle:PanierLigne')->findBy(array('idC' => NULL, 'idUser' => $user));
+        foreach ($panier as $l) {
+            $l->setIdC($commande);
+        }
+        $em4->flush();
+
+        $ligneCommande = new LigneCommande();
+        $em5 = $this->getDoctrine()->getManager();
+        $ligneCommande = $em5->getRepository(LigneCommande::class)->findBy(array('idUser' => $user));
+        foreach ($ligneCommande as $lig) {
+            $em5->remove($lig);
+        }
+        $em5->flush();
+
+
+        return $this->redirectToRoute('produit_viewCO');
+    }
+
+
+    /**
+     * Finds and displays a Commande entity in front.
+     *
+     */
+    public function commandeAction()
+    {
+        $user = $this->container->get('security.token_storage')->getToken()->getUser();
+        $user->getId();
+        $em2 = $this->getDoctrine()->getManager();
+        $carts = $em2->getRepository('BaskelBundle:Commande')->findOneBy(array('etat' => "En cours de traitement", 'idUser' => $user));
+        $categories = $em2->getRepository('EventBundle:Categorie')->findAll();
+        return $this->render('@Baskel/Produit/commande.html.twig', array(
+
+            'carts' => $carts,
+            'categories' => $categories
+
+
+        ));
+    }
+
+
+    /**
+     * Finds and displays all Commande entity in back.
+     *
+     */
+    public function commandeBackAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $commandes = $em->getRepository('BaskelBundle:Commande')->findAll();
+
+        return $this->render('@Baskel/Produit/commandeBack.html.twig', array(
+            'commandes' => $commandes,
+        ));
+
+    }
+    public function sendMailAction(String $body, String $user)
+    {
+        $message = \Swift_Message::newInstance()
+            ->setSubject('Commande Baskel')
+            ->setFrom(['hamza.biter@esprit.tn' => 'Baskel'])
+            ->setTo($user )
+            ->setBody($body);
+
+        $this->get('mailer')->send($message);
+        return $this->redirectToRoute('produit_commandeindex');
+
+    }
+
+    /**
+     * Valider Commande entity in back.
+     *
+     */
+    public function validerCommandeAction(Request $request, Commande $commande)
+    {
+        $id_commande = $request->get('id');
+
+        $em = $this->getDoctrine()->getManager();
+        $commande = $em->getRepository(Commande::class)->find($id_commande);
+        $commande->setEtat("Validée");
+        $em->flush();
+        $this->sendMailAction("Votre commande a été validée", $commande->getIdUser()->getEmail());
+        return $this->redirectToRoute('produit_commandeindex');
+
+    }
+
+    /**
+     * Refuser  Commande entity in back.
+     *
+     */
+    public function refuserCommandeAction(Request $request, Commande $commande)
+    {
+        $id_commande = $request->get('id');
+
+        $em = $this->getDoctrine()->getManager();
+        $commande = $em->getRepository(Commande::class)->find($id_commande);
+        $commande->setEtat("Refusée");
+        $em->flush();
+        $this->sendMailAction("Votre commande a été refusée",$commande->getIdUser()->getEmail());
+        return $this->redirectToRoute('produit_commandeindex');
+    }
+
+    /**
+     * Affiche details de Commande entity in back.
+     *
+     */
+    public function afficherDetailsAction(Request $request,Commande $commande)
+    {
+        $id_commande = $request->get('id');
+
+        $em4 = $this->getDoctrine()->getManager();
+        $paniers = $em4->getRepository('BaskelBundle:PanierLigne')->findBy(array('idC' => $id_commande));
+        $em2 = $this->getDoctrine()->getManager();
+        $produit = $em2->getRepository('BaskelBundle:Produit')->findAll();
+        return $this->render('@Baskel/Produit/detailsCommande.html.twig', array(
+            'produit' => $produit,
+            'paniers' => $paniers
+
+        ));
+
+    }
 
 
 

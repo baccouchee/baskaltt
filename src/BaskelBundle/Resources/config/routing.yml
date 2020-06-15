@@ -74,6 +74,14 @@ liker_supp:
     path:    /supppLike/{id}
     defaults: { _controller: BaskelBundle:Produit:supppLike}
 
+produit_produitF:
+    resource: "@BaskelBundle/Resources/config/produitF.yml"
+    prefix:   /produitF
+
+produit_produit:
+    resource: "@BaskelBundle/Resources/config/produit.yml"
+    prefix:   /produit
+
 
 
 
