@@ -1,0 +1,148 @@
+{% extends 'Back/layoutBack.html.twig' %}
+{% block content %}
+
+    <!-- /header -->
+    <div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Gérer <b>Stations</b></h2>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <a href="{{ path('chtbaskel_ajoutStation') }}">
+                            <span class="glyphicon glyphicon-refresh"></span>
+                        </a>
+                        <!-- Recherche -->
+                        <form action = "{{ path('chtbaskel_ajoutStation') }}" method="post">
+                        <form class="form-inline ml-auto">
+                            <div class="md-form my-0">
+                                <input name="motcle" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                            </div>
+                        </form>
+
+                        <!-- fin recherche -->
+                        <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Ajouter Nouvelle Station</span></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th>
+							<span class="custom-checkbox">
+								<input type="checkbox" id="selectAll">
+								<label for="selectAll"></label>
+							</span>
+                    </th>
+                    <th>Nom de la Station</th>
+                    <th>Longitude</th>
+                    <th>Latitude</th>
+                    <th>Nombre de Vélos Disponibles</th>
+                    <th>Localisation</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for s in stations %}
+                <tr>
+                    <td>
+							<span class="custom-checkbox">
+								<input type="checkbox" id="checkbox1" name="options[]" value="1">
+								<label for="checkbox1"></label>
+							</span>
+                    </td>
+                    <td>{{ s.nomStation }}</td>
+                    <td>{{ s.longitude }}</td>
+                    <td>{{ s.latitude }}</td>
+                    <td>{{ s.nbrVelo }}</td>
+                    <td>
+                        <!-- Map Localisation Station -->
+                        <a href="{{ path('chtbaskel_afficherMapStation',{'id':s.id}) }}" type="button" data-target="#modalCustom">Afficher Position</a>
+                        <!-- Map Localisation Station -->
+                    </td>
+                    <td>
+                        {{ render(controller('ChtbaskelBundle:Station:modifierStation',{'id':s.id})) }}
+                        <a href="#deleteEmployeeModal{{ s.id }}" class="delete" data-toggle="modal" ><i class="fa fa-trash-o"></i></a>
+                    </td>
+                </tr>
+                    <div id="deleteEmployeeModal{{ s.id }}" tabindex="-1"  class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <form>
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Supprimer Station</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Voulez-vous vraiment supprimer {{ s.nomStation }} ?</p>
+                                        <p class="text-warning"><small>Cette action est irréversible.</small></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                                        <a href="{{ path('chtbaskel_supprimerStation',{'id':s.id}) }}" class="btn btn-danger" id="lien" >Supprimer</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    </td>
+                </tr>
+                {% endfor %}
+                <tr>
+                </tbody>
+            </table>
+            <div class="clearfix">
+                <div class="hint-text">Showing <b>6</b> out of <b>{{ stations.getTotalItemCount }}</b> entries</div>
+                <ul class="pagination">
+                    <li class="page-item">{{ knp_pagination_render(stations) }}</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+   <!-- ADD MODAL -->
+    {{form_start (form, {attr: {novalidate: 'novalidate'}}) }}
+    <div id="addEmployeeModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form novalidate>
+                    <div class="modal-header">
+                        <h4 class="modal-title">Ajouter Station</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Nom de la Station</label>
+                            {{form_widget (form.nomStation, {'attr': {'class': 'form-control'}})}}<br>
+                                {{ form_errors(form.nomStation) }}
+                        </div>
+                        <div class="form-group">
+                            <label>Longitude</label>
+                            {{form_widget (form.longitude, {'attr': {'class': 'form-control'}})}}<br>
+                            {{ form_errors(form.longitude) }}
+                        </div>
+                        <div class="form-group">
+                            <label>Latitude</label>
+                            {{form_widget (form.latitude, {'attr': {'class': 'form-control'}})}}<br>
+                            {{ form_errors(form.latitude) }}
+                        </div>
+                        <div class="form-group">
+                            <label>Nombre de Vélos Disponibles</label>
+                            {{form_widget (form.nbrVelo, {'attr': {'class': 'form-control'}})}}<br>
+                            {{ form_errors(form.nbrVelo) }}
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                        {{form_end (form) }}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

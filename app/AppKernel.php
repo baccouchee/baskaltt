@@ -27,6 +27,11 @@ class AppKernel extends Kernel
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new BaskelBundle\BaskelBundle(),
             new CMEN\GoogleChartsBundle\CMENGoogleChartsBundle(),
+            new ChtbaskelBundle\ChtbaskelBundle(),
+            new Ivory\GoogleMapBundle\IvoryGoogleMapBundle(),
+            new Http\HttplugBundle\HttplugBundle(),
+            new Ivory\SerializerBundle\IvorySerializerBundle(),
+
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

@@ -1,0 +1,35 @@
+{% extends 'Back/layoutBack.html.twig' %}
+{% block content %}
+<!--Modal: Name-->
+
+    <script>
+        var i=setInterval(function(){
+            if(typeof {{ map.variable }}!=='undefined'){
+                clearInterval(i);
+            }
+            else{
+                if (window.google){
+                    ivory_google_map_load();
+                }
+            }
+        },100);
+    </script>
+
+            <div class="modal-body mb-0 p-0">
+                <!--Google map-->
+                <div id="map-container-google-18" class="z-depth-1-half map-container-11"  style="height: 400px">
+                    {{ ivory_google_map_js(map) }}
+                   {{ ivory_google_map(map) }}
+                    {{ ivory_google_api([map]) }}
+                </div>
+            </div>
+            <!--Footer-->
+
+            <div class="modal-footer justify-content-center">
+
+                <a href="{{ path('chtbaskel_ajoutStation') }}" type="button" class="btn btn-outline-secondary btn-md" data-dismiss="modal">Retour<i class="close"></i></a>
+
+            </div>
+
+<!--Modal: Name-->
+{% endblock %}

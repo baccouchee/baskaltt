@@ -1,3 +1,7 @@
+chtbaskel:
+    resource: "@ChtbaskelBundle/Resources/config/routing.yml"
+    prefix:   /
+
 baskel:
     resource: "@BaskelBundle/Resources/config/routing.yml"
     prefix:   /

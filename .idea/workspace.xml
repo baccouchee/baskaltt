@@ -2,606 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35bb79cb-405c-435c-beca-9fa3f0b220c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Resources/views/front/layoutfront.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/views/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/BaskelBundle.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Controller/DefaultController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Controller/ProduitController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Entity/CategorieP.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Entity/Likes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Entity/Produit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Form/CategoriePType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Form/ProduitType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Form/SearchForm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Repository/CategoriePRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Repository/LikesRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Repository/ProduitRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/config/routing.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/config/services.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/CategorieP/afficheC.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/CategorieP/ajoutC.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Default/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheDetail.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheDetailL.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheLike.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheP.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AffichePBack.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AjoutP.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/ModifierP.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/pdf.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Tests/Controller/CategoriePControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Tests/Controller/CategoryControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BaskelBundle/Tests/Controller/ProduitControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/BaskelBundle/Controller/DefaultControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/css/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/3.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/access/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/access/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/access/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/access/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/access/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/access/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/access/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/access/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/access/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/background/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/background/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/background/404.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/background/Banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/background/banner-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/background/home-banner-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/background/home-banner-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/background/parallax.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/banner/Banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/banner/banner-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/banner/banner-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/banner/home-banner-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/banner/home-banner-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/blog/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/blog/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/blog/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/blog/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/blog/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/blog/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/blog/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/blog/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/blog/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/blog/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/blog/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/blog/sidebar/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/blog/sidebar/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/blog/sidebar/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/blog/sidebar/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/cart-preview/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/cart-preview/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/cart-preview/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/clothes/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/clothes/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/clothes/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/clothes/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/clothes/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/clothes/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/clothes/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/clothes/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/clothes/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/clothes/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/clothes/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/clothes/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/flag/china.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/flag/japan.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/flag/singapore.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/flag/usa.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/hot-deal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/logo-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/logo-white/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/marker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/offer/banner-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/offer/clothes-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/offer/clothes-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/offer/home-2-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/offer/home-2-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/offer/home-2-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/offer/home-2-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/offer/home-2-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/offer/home-3-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/offer/home-3-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/offer/home-3-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/offer/img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/offer/sidebar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/partner/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/partner/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/partner/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/partner/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/partner/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/partner/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/partner/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/partner/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/payment/01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/payment/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/payment/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/payment/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/payment/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/payment/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/product/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/product/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/product/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/product/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/product/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/product/cart-preview/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/product/cart-preview/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/product/cart-preview/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe-detail/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe-detail/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe-detail/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe/14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe/15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe/16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe/sidebar/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe/sidebar/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/shoe/sidebar/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/slider/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/slider/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/slider/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/slider/slider.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/team/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/team/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/team/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/team/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/testimonial/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/testimonial/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/testimonial/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/testimonial/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/testimonial/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/user/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/user/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/user/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/user/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/images/user/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/js/main.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/js/shoe-variants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/Magnific-Popup/dist/jquery.magnific-popup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/Magnific-Popup/dist/magnific-popup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/animate.css/animate.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/bootstrap-select/dist/css/bootstrap-select.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/bootstrap-select/dist/js/bootstrap-select.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/elevatezoom/images/large/image1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/elevatezoom/images/large/image2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/elevatezoom/images/large/image3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/elevatezoom/images/large/image4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/elevatezoom/images/small/image1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/elevatezoom/images/small/image2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/elevatezoom/images/small/image3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/elevatezoom/images/small/image4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/elevatezoom/images/thumb/image1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/elevatezoom/images/thumb/image2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/elevatezoom/images/thumb/image3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/elevatezoom/images/thumb/image4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/elevatezoom/images/window-positions.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/elevatezoom/jquery.elevateZoom-3.0.8.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/elevatezoom/jquery.elevatezoom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/gmap3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/imagesloaded.pkgd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/ionicons/css/ionicons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/ionicons/css/ionicons.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/ionicons/fonts/ionicons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/ionicons/fonts/ionicons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/ionicons/fonts/ionicons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/ionicons/fonts/ionicons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/isotope.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-bar-rating/dist/jquery.barrating.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-bar-rating/dist/themes/bars-1to10.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-bar-rating/dist/themes/bars-horizontal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-bar-rating/dist/themes/bars-movie.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-bar-rating/dist/themes/bars-pill.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-bar-rating/dist/themes/bars-reversed.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-bar-rating/dist/themes/bars-square.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-bar-rating/dist/themes/bootstrap-stars.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-bar-rating/dist/themes/css-stars.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-bar-rating/dist/themes/fontawesome-stars-o.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-ui/external/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-ui/images/ui-icons_444444_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-ui/images/ui-icons_555555_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-ui/images/ui-icons_777620_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-ui/images/ui-icons_777777_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-ui/images/ui-icons_cc0000_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-ui/images/ui-icons_ffffff_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-ui/jquery-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery-ui/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery.countTo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery.matchHeight-min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery.parallax-1.1.3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/jquery/dist/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/masonry.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/overflow-text.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/owl-carousel/assets/owl.carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/owl-carousel/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/plugin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/plugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/ps-icon/Read Me.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/ps-icon/demo-files/demo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/ps-icon/demo-files/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/ps-icon/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/ps-icon/fonts/ps-icon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/ps-icon/fonts/ps-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/ps-icon/fonts/ps-icon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/ps-icon/fonts/ps-icon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/ps-icon/selection.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/ps-icon/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/assets/coloredbg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/assets/gridtile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/assets/gridtile_3x3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/assets/gridtile_3x3_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/assets/gridtile_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/assets/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/assets/sources/fb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/assets/sources/fr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/assets/sources/ig.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/assets/sources/post.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/assets/sources/revolution_slide1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/assets/sources/revolution_slide2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/assets/sources/tw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/assets/sources/vm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/assets/sources/wc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/assets/sources/yt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/assets/svg/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/assets/svg/svg.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/closedhand.cur" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/layers.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/navigation-skins/ares.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/navigation-skins/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/navigation-skins/dione.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/navigation-skins/erinyen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/navigation-skins/gyges.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/navigation-skins/hades.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/navigation-skins/hebe.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/navigation-skins/hephaistos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/navigation-skins/hermes.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/navigation-skins/hesperiden.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/navigation-skins/metis.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/navigation-skins/persephone.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/navigation-skins/uranus.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/navigation-skins/zeus.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/navigation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/openhand.cur" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/settings-source.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/settings.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/css/tp-color-picker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/font-awesome/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/pe-icon-7-stroke/css/helper.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/pe-icon-7-stroke/css/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/pe-icon-7-stroke/fonts/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/pe-icon-7-stroke/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/revicons/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/revicons/revicons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/revicons/revicons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/revicons/revicons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/fonts/revicons/revicons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/images/tpcolorpicker/arrow_down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/images/tpcolorpicker/arrow_up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/images/tpcolorpicker/check.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/images/tpcolorpicker/check_reverse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/images/tpcolorpicker/check_small.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/images/tpcolorpicker/delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/images/tpcolorpicker/exit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/images/tpcolorpicker/point_bottom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/images/tpcolorpicker/point_top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/images/tpcolorpicker/save.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/images/tpcolorpicker/trans_tile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/revolution.extension.actions.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/revolution.extension.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/revolution.extension.migration.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/revolution.extension.navigation.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/revolution.extension.parallax.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/revolution.extension.video.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/source/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/source/revolution.extension.actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/source/revolution.extension.carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/source/revolution.extension.kenburn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/source/revolution.extension.layeranimation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/source/revolution.extension.migration.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/source/revolution.extension.navigation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/source/revolution.extension.parallax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/source/revolution.extension.slideanims.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/extensions/source/revolution.extension.video.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/jquery.themepunch.enablelog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/jquery.themepunch.revolution.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/jquery.themepunch.tools.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/source/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/source/jquery.themepunch.enablelog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/source/jquery.themepunch.revolution.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/source/jquery.themepunch.tools.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/source/tp-color-picker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/revolution/js/tp-color-picker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/slick/slick/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/slick/slick/fonts/slick.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/slick/slick/fonts/slick.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/slick/slick/fonts/slick.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/slick/slick/fonts/slick.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/slick/slick/slick.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/slick/slick/slick.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/plugins/slick/slick/slick.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/css/elements/_pagination.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/base/fonts.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/base/head.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/base/scripts.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/base/styles.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/common/accordion.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/common/breadcrumb.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/common/cart.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/common/masonry.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/common/mega-menu.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/common/pagination.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/common/tabs.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/data/list.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/data/menu.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/data/pages.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/data/post.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/404.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/about.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/blog-detail.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/blog-grid-2.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/blog-grid.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/blog-list.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/cart.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/checkout.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/compare.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/contact-us-2.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/contact-us.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/homepage-2.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/homepage-3.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/homepage.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/pages.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/product-detail.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/product-listing-2.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/product-listing.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/sticky.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/typhography.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/layouts/whishlist.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/master.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/about.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/blog-detail.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/blog-grid-2.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/blog-grid.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/blog-list.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/cart.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/checkout.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/compare.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/contact-us-2.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/contact-us.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/demo-text.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/footer.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/header.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/modules/accsess.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/modules/blog-sidebar.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/modules/clothes.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/modules/form-comment.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/modules/pagination.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/modules/partner.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/modules/post-comment.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/modules/product-action.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/modules/product-sidebar.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/modules/shoe.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/product-detail.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/product-listing-2.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/product-listing.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/home-2-features.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/home-2-hotdeal.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/home-2-new-product.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/home-2-offer.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/home-3-features.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/home-3-hotdeal.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/home-3-offer.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/home-3-product.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/home-3-topsale.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/home-banner.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/home-blog.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/home-contact.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/home-features-product.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/home-hot-deal.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/home-testimonial.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/home-top-sales.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/related-product.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/slider-2.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/slider-3.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/sections/subscribe.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/slider/slider-1.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/slider/slider-2.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/typhography.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/partials/whishlist.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/jade/utils/mixins.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/base/_reset.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/base/_typhography.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/components/_cart.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/components/_contact.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/components/_navigation.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/components/_search.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/components/_subscribe.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/custom.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_author.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_banner.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_block.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_comment.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_filter.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_form.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_hotspot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_iconbox.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_loader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_masonry.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_offer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_post.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_rating.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_review.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_section.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_shoe.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_table.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_tags.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_testimonial.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_user.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/elements/_widget.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/frames/_background.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/frames/_margin.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/frames/_padding.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/modules/_404.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/modules/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/modules/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/modules/_product.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/themes/_effect.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/utils/_mixin.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/utils/_variable.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/_hover_effect.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/_masonry_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/_media_query.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/_bourbon-deprecated-upcoming.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/_bourbon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/addons/_border-color.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/addons/_border-radius.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/addons/_border-style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/addons/_border-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/addons/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/addons/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/addons/_ellipsis.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/addons/_font-stacks.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/addons/_hide-text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/addons/_margin.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/addons/_padding.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/addons/_position.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/addons/_prefixer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/addons/_retina-image.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/addons/_size.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/addons/_text-inputs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/addons/_timing-functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/addons/_triangle.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/addons/_word-wrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_animation.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_appearance.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_backface-visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_background-image.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_background.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_border-image.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_calc.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_columns.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_filter.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_flex-box.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_font-face.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_font-feature-settings.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_hidpi-media-query.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_hyphens.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_image-rendering.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_keyframes.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_linear-gradient.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_perspective.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_placeholder.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_radial-gradient.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_selection.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_text-decoration.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_transform.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_transition.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/css3/_user-select.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/functions/_assign-inputs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/functions/_contains-falsy.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/functions/_contains.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/functions/_is-length.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/functions/_is-light.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/functions/_is-number.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/functions/_is-size.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/functions/_modular-scale.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/functions/_px-to-em.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/functions/_px-to-rem.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/functions/_shade.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/functions/_strip-units.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/functions/_tint.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/functions/_transition-property-name.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/functions/_unpack.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/helpers/_convert-units.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/helpers/_directional-values.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/helpers/_font-source-declaration.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/helpers/_gradient-positions-parser.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/helpers/_linear-angle-parser.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/helpers/_linear-gradient-parser.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/helpers/_linear-positions-parser.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/helpers/_linear-side-corner-parser.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/helpers/_radial-arg-parser.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/helpers/_radial-gradient-parser.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/helpers/_radial-positions-parser.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/helpers/_render-gradients.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/helpers/_shape-size-stripper.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/helpers/_str-to-num.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/settings/_asset-pipeline.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/settings/_prefixer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/front/resources/sass/vendor/bourbon/settings/_px-to-em.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/uploads/images/17f2fdd3b27350caf85f731b2635bacb.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/uploads/images/f7c56962e30d416c688fb991463fdf27.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/Back/layoutBack.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/front/layoutFront.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/registration.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/ChtbaskelBundle.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Controller/DefaultController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Controller/StationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Entity/Location.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Entity/Station.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Form/StationType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Repository/LocationRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Repository/StationRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/config/routing.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/config/services.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/views/Default/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/views/Station/AfficherMS.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/views/Station/AfficherMapFront.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/views/Station/AfficherMapLocFront.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/views/Station/AjoutS.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/views/Station/AjouterS.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/views/Station/InfoWinShow.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Resources/views/Station/ModifierS.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChtbaskelBundle/Tests/Controller/StationControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/ChtbaskelBundle/Controller/DefaultControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/images/BANN-WEB-gestes-barriere-1505.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/images/borne_velo_violet@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/images/filter_map_bike.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/images/filter_map_bike_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/images/geolocSearch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/images/marker_favo_legend@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/back/images/velo_meca_green@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/front/images/BANN-WEB-gestes-barriere-1505.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/front/images/New-Text-Document.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/front/images/borne_velo_violet@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/front/images/filter_map_bike.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/front/images/filter_map_bike_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/front/images/filter_map_terminal_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/front/images/geolocSearch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/front/images/marker_favo_legend@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/front/images/velo_meca_green@2x.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/baskeltt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/baskeltt.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/baseAdmin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/baseAdmin.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/baseFront.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/baseFront.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/front/layoutfront.html.twig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/config_dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config_dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheDetail.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheDetail.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheDetailL.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheDetailL.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheLike.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheLike.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheP.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaskelBundle/Resources/views/Produit/AfficheP.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -669,7 +125,6 @@
       <path value="$PROJECT_DIR$/vendor/khanamiryan/qrcode-detector-decoder" />
       <path value="$PROJECT_DIR$/vendor/bacon/bacon-qr-code" />
       <path value="$PROJECT_DIR$/vendor/blackknight467/star-rating-bundle" />
-      <path value="$PROJECT_DIR$/vendor/mgilet/notification-bundle" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-snappy" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-snappy-bundle" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
@@ -681,6 +136,29 @@
       <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
       <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
       <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/egeloen/google-map-bundle" />
+      <path value="$PROJECT_DIR$/vendor/egeloen/google-map" />
+      <path value="$PROJECT_DIR$/vendor/egeloen/json-builder" />
+      <path value="$PROJECT_DIR$/vendor/php-http/guzzle6-adapter" />
+      <path value="$PROJECT_DIR$/vendor/php-http/httplug" />
+      <path value="$PROJECT_DIR$/vendor/php-http/promise" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/egeloen/serializer" />
+      <path value="$PROJECT_DIR$/vendor/clue/stream-filter" />
+      <path value="$PROJECT_DIR$/vendor/php-http/message-factory" />
+      <path value="$PROJECT_DIR$/vendor/php-http/message" />
+      <path value="$PROJECT_DIR$/vendor/php-http/stopwatch-plugin" />
+      <path value="$PROJECT_DIR$/vendor/php-http/discovery" />
+      <path value="$PROJECT_DIR$/vendor/php-http/httplug-bundle" />
+      <path value="$PROJECT_DIR$/vendor/php-http/client-common" />
+      <path value="$PROJECT_DIR$/vendor/php-http/logger-plugin" />
+      <path value="$PROJECT_DIR$/vendor/egeloen/serializer-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ZljpbTh4HZyVuaadJpl6zlXoTZ" />
@@ -697,20 +175,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/abdouu" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Resources/views" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\baskeltt\app\Resources\views" />
+      <recent name="C:\wamp64\www\baskeltt\app\Resources\views\front" />
+      <recent name="C:\wamp64\www\baskeltt\src\ChtbaskelBundle" />
+      <recent name="C:\wamp64\www\baskeltt\src\BaskelBundle" />
+      <recent name="C:\wamp64\www\baskeltt\src\ClubBundle\Form" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\baskeltt\app\Resources\views\event" />
       <recent name="C:\wamp64\www\baskeltt\app\Resources\FOSUserBundle\views" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\baskeltt\app\Resources\views" />
-      <recent name="C:\wamp64\www\baskeltt\src\BaskelBundle" />
-      <recent name="C:\wamp64\www\baskeltt\src\ClubBundle\Form" />
-      <recent name="C:\wamp64\www\baskeltt\src\ClubBundle\Entity" />
-      <recent name="C:\wamp64\www\baskeltt\src\EventBundle\Resources\views" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -721,9 +199,9 @@
       <command value="s doctrine:generate:crud" />
       <command value="s doctrine:generate:entity" />
       <command value="s cache:clear" />
-      <command value="s server:run" />
       <command value="s generate:bundle" />
       <command value="s doctrine:schema:update --force" />
+      <command value="s server:run" />
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -765,7 +243,9 @@
       <workItem from="1591791288855" duration="11651000" />
       <workItem from="1591927228297" duration="5642000" />
       <workItem from="1592053895831" duration="7046000" />
-      <workItem from="1592062729713" duration="4955000" />
+      <workItem from="1592062729713" duration="5479000" />
+      <workItem from="1592155624217" duration="6227000" />
+      <workItem from="1592222898639" duration="913000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 2">
       <created>1592004864141</created>
@@ -788,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592005157792</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit produit">
+      <created>1592155091297</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592155091297</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -808,7 +295,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Commit 2" />
     <MESSAGE value="Commit 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 3" />
+    <MESSAGE value="Commit produit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit produit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592005058719">
@@ -831,10 +319,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1591717182239" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1592005156328">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1592223912235">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1592005156328" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1592223912235" />
     <state x="720" y="276" key="ComposerCompositePathDialog" timestamp="1588555300089">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -843,30 +331,30 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="129" y="62" width="1092" height="616" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1592005147171" />
-    <state x="758" y="179" key="FileChooserDialogImpl" timestamp="1592063238444">
+    <state x="758" y="179" key="FileChooserDialogImpl" timestamp="1592155838042">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="758" y="179" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1592063238444" />
+    <state x="758" y="179" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1592155838042" />
     <state x="530" y="266" key="FrameworkEditDialogDimensionKey" timestamp="1587245282900">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="530" y="266" key="FrameworkEditDialogDimensionKey/0.0.1366.738@0.0.1366.738" timestamp="1587245282900" />
-    <state width="1323" height="249" key="GridCell.Tab.0.bottom" timestamp="1592062587997">
+    <state width="1323" height="249" key="GridCell.Tab.0.bottom" timestamp="1592176717749">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="249" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1592062587997" />
-    <state width="1323" height="249" key="GridCell.Tab.0.center" timestamp="1592062587997">
+    <state width="1323" height="249" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1592176717749" />
+    <state width="1323" height="249" key="GridCell.Tab.0.center" timestamp="1592176717749">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="249" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1592062587997" />
-    <state width="1323" height="249" key="GridCell.Tab.0.left" timestamp="1592062587997">
+    <state width="1323" height="249" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1592176717749" />
+    <state width="1323" height="249" key="GridCell.Tab.0.left" timestamp="1592176717749">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="249" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1592062587997" />
-    <state width="1323" height="249" key="GridCell.Tab.0.right" timestamp="1592062587997">
+    <state width="1323" height="249" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1592176717749" />
+    <state width="1323" height="249" key="GridCell.Tab.0.right" timestamp="1592176717749">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="249" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1592062587997" />
+    <state width="1323" height="249" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1592176717749" />
     <state x="469" y="204" key="NewPhpClassDialog" timestamp="1586772918228">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -875,10 +363,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="242" height="198" key="RunAnythingAction_Filter_Popup/0.0.1366.738@0.0.1366.738" timestamp="1585694127830" />
-    <state x="177" y="23" width="998" height="708" key="SettingsEditor" timestamp="1591404100302">
+    <state x="177" y="23" width="998" height="708" key="SettingsEditor" timestamp="1592156009328">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="177" y="23" width="998" height="708" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1591404100302" />
+    <state x="177" y="23" width="998" height="708" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1592156009328" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1585517007211">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -887,26 +375,26 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="525" y="365" key="SymfonyPathDialog/0.0.1366.738@0.0.1366.738" timestamp="1591403825093" />
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1592005172702">
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1592155095954">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1592005172702" />
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1592155095954" />
     <state x="667" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1588299818913">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="667" y="218" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1588299818912" />
-    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592154890018">
+    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592223830441">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1592154890018" />
+    <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1592223830441" />
     <state x="413" y="24" key="com.intellij.troubleshooting.ui.CollectTroubleshootingInformationDialog" timestamp="1587244770526">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="24" key="com.intellij.troubleshooting.ui.CollectTroubleshootingInformationDialog/0.0.1366.738@0.0.1366.738" timestamp="1587244770526" />
-    <state x="637" y="424" width="672" height="658" key="run.anything.popup" timestamp="1592154084835">
+    <state x="637" y="424" width="672" height="658" key="run.anything.popup" timestamp="1592223034957">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="637" y="424" width="672" height="658" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1592154084835" />
+    <state x="637" y="424" width="672" height="658" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1592223034957" />
     <state x="346" y="59" key="search.everywhere.popup" timestamp="1586703723629">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

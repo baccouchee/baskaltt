@@ -5,6 +5,7 @@ imports:
     - { resource: "@EventBundle/Resources/config/services.yml" }
     - { resource: "@ClubBundle/Resources/config/services.yml" }
     - { resource: "@BaskelBundle/Resources/config/services.yml" }
+    - { resource: "@ChtbaskelBundle/Resources/config/services.yml" }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -153,3 +154,20 @@ knp_paginator:
 
 bazinga_faker:
   orm: doctrine
+
+ivory_google_map:
+  map:
+    api_key: AIzaSyAOJFyxY9EnuYejfhhnfQiIl5wtE4KXPiM
+  direction:
+    api_key: AIzaSyAOJFyxY9EnuYejfhhnfQiIl5wtE4KXPiM
+    format: json
+    client: httplug.client.default
+    message_factory: httplug.message_factory.default
+
+httplug:
+  classes:
+    client: Http\Adapter\Guzzle6\Client
+    message_factory: Http\Message\MessageFactory\GuzzleMessageFactory
+  clients:
+    acme:
+      factory: httplug.factory.guzzle6

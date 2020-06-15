@@ -1,0 +1,31 @@
+chtbaskel_homepage:
+    path:     /
+    defaults: { _controller: ChtbaskelBundle:Default:index }
+chtbaskel_ajoutStation:
+    path:     /ajoutStation
+    defaults: { _controller: ChtbaskelBundle:Station:ajoutStation }
+chtbaskel_supprimerStation:
+    path:     /supprimerStation/{id}
+    defaults: { _controller: ChtbaskelBundle:Station:supprimerStation }
+chtbaskel_modifierStation:
+    path:     /{id}/modifierStation
+    defaults: { _controller: ChtbaskelBundle:Station:modifierStation }
+chtbaskel_update:
+    path:     /{id}/update
+    defaults: { _controller: ChtbaskelBundle:Station:update }
+    requirements: { _method: post|put }
+chtbaskel_afficherMapStation:
+    path:     /afficherMapStation/{id}
+    defaults: { _controller: ChtbaskelBundle:Station:afficherMapStation }
+chtbaskel_afficherMapFront:
+    path:     /afficherMapFront
+    defaults: { _controller: ChtbaskelBundle:Station:afficherMapFront }
+chtbaskel_rechercherStation:
+    path:     /rechercherStation
+    defaults: { _controller: ChtbaskelBundle:Station:rechercherStation }
+chtbaskel_louerVelo:
+    path:     /louerVelo/{id}
+    defaults: { _controller: ChtbaskelBundle:Station:louerVelo }
+chtbaskel_find:
+    path:     /find/{id}
+    defaults: { _controller: ChtbaskelBundle:Station:find }
