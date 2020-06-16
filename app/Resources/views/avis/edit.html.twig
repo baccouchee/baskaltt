@@ -1,0 +1,16 @@
+{% extends 'templateFront.html.twig' %}
+{% form_theme edit_form 'bootstrap_4_layout.html.twig' %}
+{% block content %}
+    <div style="text-align:center">
+        <h1>Editer votre avis</h1>
+    </div><br><br>
+
+
+    {{ form_start(edit_form,{'attr': {'class' :"text-muted font-13"}}) }}
+        {{ form_widget(edit_form) }}
+        <input type="submit" value="Editer" class="ps-btn ps-btn--sm ps-contact__submit"/>
+        <a href="{{ path('avis_index') }}" class="ps-btn ps-btn--sm ps-contact__submit">Consulter la liste des avis </a>
+    {{ form_end(edit_form) }}
+
+
+{% endblock %}

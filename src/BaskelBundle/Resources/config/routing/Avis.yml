@@ -1,0 +1,25 @@
+avis_index:
+    path:     /
+    defaults: { _controller: "BaskelBundle:Avis:index" }
+    methods:  GET
+
+
+avis_show:
+    path:     /{id}/show
+    defaults: { _controller: "BaskelBundle:Avis:show" }
+    methods:  GET
+
+avis_new:
+    path:     /new
+    defaults: { _controller: "BaskelBundle:Avis:new" }
+    methods:  [GET, POST]
+
+avis_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BaskelBundle:Avis:edit" }
+    methods:  [GET, POST]
+
+avis_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BaskelBundle:Avis:delete" }
+    methods:  DELETE

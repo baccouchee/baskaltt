@@ -145,6 +145,7 @@ class EventController extends Controller
         $idx = $this->container->get('security.token_storage')->getToken()->getUser();
         $reservations = $em1->getRepository('EventBundle:Reservation')->findByIdU( $em->getRepository(User::class)->find($idx));
         $em2=$this->getDoctrine()->getManager();
+        $membres = $em1->getRepository('ClubBundle:Membre')->findByUser( $em->getRepository(User::class)->find($idx));
         $categories=$em2->getRepository('EventBundle:Categorie')->findAll();
         $user = $this->getUser();
 
@@ -157,6 +158,7 @@ class EventController extends Controller
             'user' => $user,
             'categories'=>$categories,
             'reservations' => $reservations,
+            'membres' => $membres,
         ));
     }
 

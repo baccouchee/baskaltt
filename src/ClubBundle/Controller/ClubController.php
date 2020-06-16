@@ -4,6 +4,7 @@ namespace ClubBundle\Controller;
 
 use ClubBundle\Entity\Club;
 use ClubBundle\Entity\Membre;
+use AppBundle\Entity\User;
 use Endroid\QrCode\QrCode;
 use EventBundle\Entity\Event;
 use EventBundle\Entity\Reservation;
@@ -15,6 +16,9 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
 use Knp\Bundle\SnappyBundle\Snappy\Response\PdfResponse;
 use Symfony\Component\BrowserKit\Response;
+use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 /**
  * Club controller.
  *
@@ -22,6 +26,38 @@ use Symfony\Component\BrowserKit\Response;
  */
 class ClubController extends Controller
 {
+
+    /**
+     * Deletes a membre entity.
+     *
+     * @Route("/mem/{id}/delete", name="mem_delete")
+     * @Method({"GET", "DELETE"})
+     */
+    public function deleteResAction($id)
+    {
+        $em = $this->getDoctrine()->getEntityManager();
+        $obj = $em->getRepository('ClubBundle:Membre')->find($id);
+        $em->remove($obj);
+        $em->flush();
+        $em1 = $this->getDoctrine()->getManager();
+        $idx = $this->container->get('security.token_storage')->getToken()->getUser();
+        $membres = $em1->getRepository('ClubBundle:Membre')->findByUser( $em->getRepository(User::class)->find($idx));
+        $reservations = $em1->getRepository('EventBundle:Reservation')->findByIdU( $em->getRepository(User::class)->find($idx));
+        $em2=$this->getDoctrine()->getManager();
+        $categories=$em2->getRepository('EventBundle:Categorie')->findAll();
+        $clubs = $em2->getRepository('ClubBundle:Club')->findAll();
+        $user = $this->getUser();
+
+
+        return $this->render('@FOSUser/Profile/show.html.twig', array(
+            'user' => $user,
+            'categories'=>$categories,
+            'membres' => $membres,
+            'clubs' => $clubs,
+            'reservations' => $reservations,
+        ));
+    }
+
     /**
      *
      * @Route("/liste/mem/{id}", name="club_ins")
@@ -142,7 +178,7 @@ class ClubController extends Controller
         $paginator= $this->get('knp_paginator');
         $result = $paginator->paginate(
             $clubs,
-            $request->query->getInt('page',2),
+            $request->query->getInt('page',1),
             $request->query->getInt('limit',1)
         );
         return $this->render('club/liste.html.twig', array(
@@ -161,8 +197,8 @@ class ClubController extends Controller
      */
     public function detailsAction(Club $club,Request $request)
     {
-        $form = $this->createForm('ClubBundle\Form\RType', $club);
-        $form->handleRequest($request);
+
+
         $deleteForm = $this->createDeleteForm($club);
         $em2=$this->getDoctrine()->getManager();
         $categories=$em2->getRepository('EventBundle:Categorie')->findAll();
@@ -172,7 +208,6 @@ class ClubController extends Controller
             'club' => $club,
             'events' => $events,
             'categories' => $categories,
-            'form' => $form->createView(),
 
         ));
     }

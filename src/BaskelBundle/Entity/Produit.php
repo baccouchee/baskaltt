@@ -33,7 +33,7 @@ class Produit
     /**
      * @var string
      * @Assert\NotBlank
-     * @ORM\Column(name="nom", type="string", length=10)
+     * @ORM\Column(name="nom", type="string")
      * @Assert\Length(
      *      min = 1,
      *      max = 1000,

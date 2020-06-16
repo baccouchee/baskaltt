@@ -1,0 +1,5 @@
+comment_index:
+    path:     /
+    defaults: { _controller: "BaskelBundle:Comment:index" }
+    methods:  GET
+

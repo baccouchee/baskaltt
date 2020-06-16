@@ -1,0 +1,36 @@
+{% extends 'baseFront.html.twig' %}
+
+{% block content %}
+                    {% for article in articles %}
+                    <div class="ps-post--2">
+                        <div class="ps-post__thumbnail"><a class="ps-post__overlay" href="#"></a><img src="{{ asset('uploads/images/' ~ article.image) }}" width="810" height="450"></div>
+                        <div class="ps-post__container">
+                            <header class="ps-post__header"><a class="ps-post__title" href="{{ path('article_show', { 'id': article.id }) }}">{{ article.title }}</a>
+                                <p>Posted by <a href="blog-grid.html">Baskel Studio</a> on {% if article.date %}{{ article.date|date('Y-m-d') }}{% endif %} <p class="ps-post__tags"><i class="fa fa-tags"></i><a href="blog-list.html"> dans la categorie : {{ article.category.title }}</a></p></p>
+                            </header>
+                            <div class="ps-post__content">
+                                <p>{{ article.content }}</p>
+                            </div>
+                            <footer class="ps-post__footer"><a class="ps-post__morelink" href="{{ path('article_show', { 'id': article.id }) }}">READ MORE<i class="ps-icon-arrow-left"></i></a>
+                                <div class="ps-post__actions"><span><i class="fa fa-comments"></i>{{ article.comments |length}} Comments</span>
+
+
+                                    <a href="#" , class="btn btn-link">
+                                        <span class="js-likes"><i class="fa fa-heart"></i>{{ article.likes |length }}</span>
+                                        <span class="js-label">likes</span>
+                                    </a>
+
+
+                                    <div class="ps-post__social"><i class="fa fa-share-alt"></i><a href="#">Share</a>
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+    {% endfor %}
+{% endblock %}

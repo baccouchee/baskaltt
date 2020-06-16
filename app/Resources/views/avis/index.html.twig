@@ -1,0 +1,70 @@
+{% extends 'templateFront.html.twig' %}
+
+{% block content %}
+<div style="text-align:center">
+    <h1>Avis list</h1>
+</div>
+<br><br><br>
+
+<div class="row">
+
+    <div class="col-xl-4">
+        <a href="{{ path('avis_new') }}" class="ps-btn ps-btn--sm ps-contact__submit">Ajouter avis </a>
+        <br><br><br>
+
+    </div>
+
+    <tbody>
+    {% for avi in avis %}
+
+
+        <div class="col-lg-4">
+            <form action="">
+
+                <div class="pricing-plans bg-white text-center p-4 mt-4">
+                    <div class="dropdown float-right">
+
+
+                    </div>
+                </div>
+
+                <div>
+
+                    <div class="ps-post__content" data-color="green">
+
+                        <blockquote>
+
+                            <p class="text-muted font-13"><strong>Nom :</strong> <span class="ml-2"> {{ avi.idUser}}   </span></p>
+<div>
+                            <p class="text-muted font-13"><strong>Description:</strong><span class="ml-2">{{ avi.content}} </span></p>
+</div><br>
+                            <p class="text-muted font-13"><strong>Date:</strong> <span class="ml-2"> {{ avi.dateAvis |date('Y-m-d H:i:s')}}</span></p>
+
+
+                        </blockquote>
+                        <div class="form-group">
+                            <a href="{{ path('avis_show', { 'id': avi.id }) }}" class="ps-btn ps-btn--gray"> show </a>
+
+                            <a href="{{ path('avis_edit', { 'id': avi.id }) }}" class="ps-btn ps-btn--gray"> edit </a>
+
+                        </div>
+                        <br><br><br><br>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+            </form>
+        </div> <!-- end col -->
+
+
+
+    {% endfor %}
+    </tbody>
+
+
+    {% endblock %}

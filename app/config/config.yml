@@ -13,6 +13,7 @@ parameters:
     locale: fr
     uploads_directory: '%kernel.project_dir%/web/images'
     images_directory: '%kernel.project_dir%/web/uploads/images'
+    image_directory: '%kernel.project_dir%/web/uploads/images'
 
 framework:
     #esi: ~

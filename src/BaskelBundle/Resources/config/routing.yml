@@ -74,6 +74,26 @@ liker_supp:
     path:    /supppLike/{id}
     defaults: { _controller: BaskelBundle:Produit:supppLike}
 
+baskel_avis:
+    resource: "@BaskelBundle/Resources/config/routing/Avis.yml"
+    prefix:   /avis
+
+
+baskel_meeting:
+    resource: "@BaskelBundle/Resources/config/routing/Meeting.yml"
+    prefix:   /meeting
+
+baskel_article:
+    resource: "@BaskelBundle/Resources/config/routing/Article.yml"
+    prefix:   /article
+
+baskel_comment:
+    resource: "@BaskelBundle/Resources/config/routing/Comment.yml"
+    prefix:   /comments
+
+baskel_category:
+    resource: "@BaskelBundle/Resources/config/routing/Category.yml"
+    prefix:   /cat
 produit_produitF:
     resource: "@BaskelBundle/Resources/config/produitF.yml"
     prefix:   /produitF

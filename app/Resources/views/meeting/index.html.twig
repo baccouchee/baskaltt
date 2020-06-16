@@ -1,0 +1,75 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block content %}
+    <div class="content mt-3">
+    <div class="animated fadeIn">
+    <div class="row">
+
+    <div class="col-md-12">
+    <div class="card">
+    <div class="card-header">
+        <strong class="card-title"> Listes des articles </strong>
+    </div>
+
+    <div class="card-body">
+    <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
+
+
+    <thead>
+            <tr>
+
+                <th>Date</th>
+                <th>Startsdate</th>
+                <th>Sujet</th>
+                <th>Categorie</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for meeting in meetings %}
+            <tr>
+                <td>{% if meeting.date %}{{ meeting.date|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if meeting.startsDate %}{{ meeting.startsDate|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ meeting.sujet }}</td>
+                <td>{{ meeting.categorie }}</td>
+                <td>
+
+                            <a href="{{ path('meeting_show', { 'id': meeting.id }) }}" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i>View</a>
+                            <a href="{{ path('meeting_edit', { 'id': meeting.id }) }}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i>Edit</a>
+
+                </td>
+            </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+        <a href="{{ path('meeting_new') }}" class="btn btn-outline-secondary">Ajouter un meeting</a>
+    </div>
+    </div>
+    </div>
+    </div></div></div>
+
+
+    </div>
+    </div><!-- .animated -->
+    </div><!-- .content -->
+    <ul>
+        <li>
+
+        </li>
+    </ul>
+    <script>
+        $(function () {
+            $("#example1").DataTable();
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": true,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+            });
+        });
+    </script>
+
+{% endblock %}

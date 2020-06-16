@@ -1,0 +1,51 @@
+{% extends 'baseAdmin.html.twig' %}
+{% block titre %} Ajouter Meeting {% endblock %}
+{% block content %}
+
+    <div class="card-body card-block">
+
+        {{ form_start(edit_form,{ 'attr': {'novalidate': 'nonvalidate'} }) }}
+
+        <div class="row form-group">
+
+            <div class="col col-md-3"><label class=" form-control-label">Catégorie </label></div>
+            <div class="col-12 col-md-9">{{ form_widget(edit_form.categorie, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+            <div class="col-12 col-md-9">
+                <div style="color: red">{{ form_errors(edit_form.categorie) }}</div>
+            </div>
+
+        </div>
+
+        <div class="row form-group">
+
+            <div class="col col-md-3"><label class=" form-control-label">Sujet </label></div>
+            <div class="col-12 col-md-9">{{ form_widget(edit_form.sujet, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+            <div class="col-12 col-md-9">
+                <div style="color: red"> {{ form_errors(edit_form.sujet) }}</div>
+            </div>
+
+        </div>
+        <div class="row form-group">
+            <div class="col col-md-3"><label class=" form-control-label">Date debut</label></div>
+            <div class="col-12 col-md-9">{{ form_widget(edit_form.startsDate, { 'attr': {'class': 'form-control'} }) }}
+                <small class="help-block form-text"></small></div>
+            <div class="col-12 col-md-9" style="color: red">  {{ form_errors(edit_form.startsDate) }}</div>
+        </div>
+        <div class="row form-group">
+            <div class="col col-md-3"><label class=" form-control-label">Date Fin </label></div>
+            <div class="col-12 col-md-9">{{ form_widget(edit_form.date, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+            <div class="col-12 col-md-9">
+                <div style="color: red">  {{ form_errors(edit_form.date) }}</div>
+            </div>
+        </div>
+
+        <div class="card-footer">
+            <button type="submit" value="Create" class="btn btn-primary btn-sm" >
+                <i class="fa fa-dot-circle-o"></i> Ajouter
+            </button>
+        </div>
+        {{ form_end(edit_form) }}
+    </div>
+
+
+{% endblock %}

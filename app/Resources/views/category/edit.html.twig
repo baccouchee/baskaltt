@@ -1,0 +1,42 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block titre %}Modifier categorie {% endblock %}
+{% block content %}
+
+<div class="card-body card-block">
+
+    {{ form_start(edit_form,{ 'attr': {'novalidate': 'nonvalidate'} }) }}
+    <div class="row form-group">
+        <div class="col col-md-3"><label class=" form-control-label">Nom </label></div>
+        <div class="col-12 col-md-9">{{ form_widget(edit_form.title, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+        <div class="col-12 col-md-9">
+            <div style="color: red">{{ form_errors(edit_form.title) }}</div>
+        </div>
+
+    </div>
+
+    <div class="row form-group">
+
+        <div class="col col-md-3"><label class=" form-control-label">Déscription </label></div>
+        <div class="col-12 col-md-9">{{ form_widget(edit_form.description, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+        <div class="col-12 col-md-9">
+            <div style="color: red">{{ form_errors(edit_form.description) }}</div>
+        </div>
+
+    </div>
+
+    <div class="row form-group">
+
+    <div class="card-footer">
+        <button type="submit" class="btn btn-primary btn-sm" >
+            <i class="fa fa-dot-circle-o"></i> Envoyer
+        </button>
+        {{ form_end(edit_form) }}
+
+
+
+        {{ form_start(delete_form) }}
+        <input type="submit" class="btn btn-danger btn-sm" value="Delete">
+        {{ form_end(delete_form) }}
+    </div>
+    {% endblock %}

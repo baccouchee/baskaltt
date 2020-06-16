@@ -1,0 +1,56 @@
+{% extends 'template.html.twig' %}
+
+{% block content %}
+
+    <div class="card-header">
+        <h1>Comment list </h1>
+    </div>
+
+
+    <table id="example1" class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Author</th>
+            <th>Article name</th>
+            <th>Content</th>
+            <th>Created At</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for comment in comments %}
+            <tr>
+                <td>{{ comment.id }}</a></td>
+                <td>{{ comment.author }}</td>
+                <td>{{ comment.article.title}}</td>
+                <td>{{ comment.content}}</td>
+                <td>{% if comment.createdAt %}{{ comment.createdAt|date('Y-m-d') }}{% endif %}</td>
+                <td>
+
+                    <a href="" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i>Valider</a>
+                    <a href="" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i>Supprimer</a>
+
+
+                </td>
+            </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <script>
+        $(function () {
+            $("#example1").DataTable();
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": true,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+            });
+        });
+    </script>
+    
+{% endblock %}

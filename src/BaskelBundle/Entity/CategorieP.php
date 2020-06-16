@@ -30,7 +30,7 @@ class CategorieP
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=10)
+     * @ORM\Column(name="name", type="string")
      *      *      * @Assert\Length(
      *      min = 2,
      *      max = 100,

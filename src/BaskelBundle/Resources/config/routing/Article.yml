@@ -1,0 +1,84 @@
+article_index:
+    path:     /AF
+    defaults: { _controller: "BaskelBundle:Article:index" }
+    methods:  GET
+
+article_indexb:
+    path:     /listeM
+    defaults: { _controller: "BaskelBundle:Article:indexb" }
+    methods:  GET
+
+article_show:
+    path:     /{id}/show
+    defaults: { _controller: "BaskelBundle:Article:show" }
+    methods:   [GET, POST]
+
+article_showb:
+    path:     /{id}/showb
+    defaults: { _controller: "BaskelBundle:Article:showb" }
+    methods:  GET
+
+
+article_new:
+    path:     /new
+    defaults: { _controller: "BaskelBundle:Article:new" }
+    methods:  [GET, POST]
+
+article_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BaskelBundle:Article:edit" }
+    methods:  [GET, POST]
+
+article_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BaskelBundle:Article:delete" }
+    methods:  DELETE
+
+delete_comment:
+    path:     /{id}/deletecomment
+    defaults: { _controller: "BaskelBundle:Article:deleteComment" }
+
+article_like:
+    path:     /{id}/like
+    defaults: { _controller: "BaskelBundle:Article:like" }
+
+article_stat:
+    path:     /stat
+    defaults: { _controller: "BaskelBundle:Article:chartsR" }
+
+
+all:
+    path:     /all
+    defaults: { _controller: "BaskelBundle:Article:all" }
+
+find_article:
+    path:     /{id}/find
+    defaults: { _controller: "BaskelBundle:Article:find" }
+
+
+addcom:
+    path:     /{id}/addcom
+    defaults: { _controller: "BaskelBundle:Article:addcom" }
+
+
+rem:
+    path:     /com/{id}/rem
+    defaults: { _controller: "BaskelBundle:Article:deleteco" }
+
+jaime:
+    path:     /{id}/jaime
+    defaults: { _controller: "BaskelBundle:Article:jaime" }
+
+allAvis:
+    path:     /allArticle
+    defaults: { _controller: "BaskelBundle:Article:allArticle" }
+
+article_likeM:
+    path:   /{id}/like
+    defaults: { _controller: "BaskelBundle:Article:likeM" }
+
+find_id:
+    path:     /{id}/findM
+    defaults: { _controller: "BaskelBundle:Article:findM"}
+
+

@@ -1,0 +1,56 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block titre %} Modifier Article {% endblock %}
+{% block content %}
+
+<div class="card-body card-block">
+
+    {{ form_start(edit_form,{ 'attr': {'novalidate': 'nonvalidate'} }) }}
+    <div class="row form-group">
+        <div class="col col-md-3"><label class=" form-control-label">Titre </label></div>
+        <div class="col-12 col-md-9">{{ form_widget(edit_form.title, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+        <div class="col-12 col-md-9">
+            <div style="color: red">{{ form_errors(edit_form.title) }}</div>
+        </div>
+
+    </div>
+
+    <div class="row form-group">
+
+        <div class="col col-md-3"><label class=" form-control-label">Catégorie </label></div>
+        <div class="col-12 col-md-9">{{ form_widget(edit_form.category, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+        <div class="col-12 col-md-9">
+            <div style="color: red">{{ form_errors(edit_form.category) }}</div>
+        </div>
+
+    </div>
+
+    <div class="row form-group">
+
+        <div class="col col-md-3"><label class=" form-control-label">Déscription </label></div>
+        <div class="col-12 col-md-9">{{ form_widget(edit_form.content, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+        <div class="col-12 col-md-9">
+            <div style="color: red"> {{ form_errors(edit_form.content) }}</div>
+        </div>
+
+    </div>
+    <div class="row form-group">
+        <div class="col col-md-3"><label class=" form-control-label">Image de l'article   </label></div>
+        <div class="col-12 col-md-9">{{ form_widget(edit_form.image, { 'attr': {'class': 'form-control'} }) }}<small class="form-text text-muted"></small></div>
+        <div class="col-12 col-md-9">
+            <div style="color: red">  {{ form_errors(edit_form.image) }}</div>
+        </div>
+    </div>
+    <div class="card-footer">
+        <button type="submit" class="btn btn-primary btn-sm" >
+            <i class="fa fa-dot-circle-o"></i> Envoyer
+        </button>
+    {{ form_end(edit_form) }}
+        <a href="{{ path('article_indexb') }}" class="btn btn-outline-secondary">Liste des articles</a>
+
+
+            {{ form_start(delete_form) }}
+                <input type="submit" class="btn btn-danger btn-sm" value="Delete">
+            {{ form_end(delete_form) }}
+    </div>
+{% endblock %}

@@ -1,0 +1,15 @@
+BaskelBundle\Entity\Products:
+    type: entity
+    table: null
+    repositoryClass: BaskelBundle\Repository\ProductsRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nameProduct:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

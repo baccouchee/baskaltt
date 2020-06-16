@@ -66,12 +66,6 @@ class Club
 
 
 
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="rating", type="integer")
-     */
-    private $rating;
 
     /**
      * @Assert\File(maxSize="6000000")

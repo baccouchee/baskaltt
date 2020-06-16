@@ -85,37 +85,37 @@
                     </ul>
                 </li>
                 <li class="menu-item-has-children dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Gestion des articles </a>
+                    <ul class="sub-menu children dropdown-menu">
+
+                        <li><i class="fa fa-table"></i><a href="{{ path('article_new')}}">Ajouter un article</a></li>
+                        <li><i class="fa fa-table"></i><a href="{{ path('article_indexb')}}">Liste des articles</a></li>
+                        <li><i class="fa fa-table"></i><a href="{{ path('category_new')}}">Ajouter une categorie</a></li>
+                        <li><i class="fa fa-table"></i><a href="{{ path('category_index')}}">Liste des categories</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Gestion des locations </a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="fa fa-table"></i><a href="{{ path('chtbaskel_ajoutStation')}}">Liste des locations</a></li>
                     </ul>
                 </li>
                 <li class="menu-item-has-children dropdown">
-                    <a href="{{ path('chtbaskel_ajoutStation')}}" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Gestion des commandes </a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Gestion des commandes </a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="fa fa-table"></i><a href="{{ path('produit_commandeindex')}}">Liste des commandes</a></li>
                     </ul>
                 </li>
                 <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Gestion des publicités </a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Gestion des meetings </a>
                     <ul class="sub-menu children dropdown-menu">
-
-                        <li><i class="fa fa-table"></i><a href="tables-publicite.html">Liste des publicités </a></li>
-                        <li><i class="fa fa-table"></i><a href="tables-data.html">Ajouter une publicité </a></li>
-
+                        <li><i class="fa fa-table"></i><a href="{{ path('meeting_index')}}">Meeting</a></li>
+                        <li><i class="fa fa-table"></i><a href="{{ path('meeting_calendrier')}}">Calendrier</a><
                     </ul>
                 </li>
 
 
-                <h3 class="menu-title">Extras</h3><!-- /.menu-title -->
-                <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Pages</a>
-                    <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-sign-in"></i><a href="page-login.html">Login</a></li>
-                        <li><i class="menu-icon fa fa-sign-in"></i><a href="page-register.html">Register</a></li>
-                        <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Forget Pass</a></li>
-                    </ul>
-                </li>
+
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>

@@ -1,0 +1,34 @@
+{% extends 'templateFront.html.twig' %}
+
+{% block content %}
+    <div style="text-align:center">
+        <h1>Avis</h1>
+    </div>
+    <br><br><br>
+
+<div class="container">
+    <div class="ps-post--detail">
+            <p>Poster par: <strong>{{ avi.idUser }}</strong></p>
+        </div>
+        <div>
+            <p><strong>Contenu: </strong>{{ avi.content }}</p>
+        </div>
+    </div>
+    </div><br><br><br>
+<table>
+    <tbody>
+    <tr>
+        <a href="{{ path('avis_index') }}" class="ps-btn ps-btn--sm ps-contact__submit" >Consulter la liste des avis</a>
+    </tr>
+    <tr>
+    <a href="{{ path('avis_edit', { 'id': avi.id }) }}" class="ps-btn ps-btn--sm ps-contact__submit" >Editer</a>
+    </tr>
+    <tr>
+    {{ form_start(delete_form) }}
+    <input type="submit" value="Delete" class="ps-btn ps-btn--sm ps-contact__submit">
+    {{ form_end(delete_form) }}
+    </tr>
+    </tbody>
+</table>
+
+{% endblock %}

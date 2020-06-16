@@ -1,0 +1,151 @@
+{% extends 'baseFront.html.twig' %}
+{% form_theme commentForm 'bootstrap_4_layout.html.twig' %}
+{% block content %}
+    <div class="ps-post--detail" xmlns="http://www.w3.org/1999/html">
+        <div class="ps-post__thumbnail"><img src="images/blog/11.png" alt=""></div>
+        <div class="ps-post__header">
+            <h3 class="ps-post__title">{{ article.title }}</h3>
+            <div class="ps-post__thumbnail"><a class="ps-post__overlay" href="#"></a><img src="{{ asset('uploads/images/' ~ article.image) }}"></div>
+            <p class="ps-post__meta">Posted by <a href="blog-grid.html">Baskel Studio</a> on {% if article.date %}{{ article.date|date('Y-m-d') }}{% endif %} <p class="ps-post__tags"><i class="fa fa-tags"></i><a href="blog-list.html"> dans la categorie : {{ article.category.title }}</a></p> </p>
+        </div>
+        <div class="ps-post__content">
+            <blockquote>
+                <p>{{ article.content }}</p>
+            </blockquote>
+
+        </div>
+
+
+            <div class="ps-post__actions"><span><i class="fa fa-comments"></i>{{ article.comments |length}} comments</span>
+
+
+
+
+                <a href="{{ path('article_like',{'id': article.id}) }}" class="btn btn-link js-like-link">
+                    {% if app.user and article.isLikedByUser(app.user) %}
+                       <span><i class="fas fa-heart"></i></span>
+                    {% else %}
+                        <span><i class="far fa-heart"></i></span>
+                    {% endif %}
+                    <span class="js-likes">{{ article.likes |length }}</span>
+                    <span class="js-label">likes</span>
+                </a>
+
+
+
+                <div class="ps-post__social"><i class="fa fa-share-alt"></i><a href="#">Share</a>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+    </div>
+
+
+<section id="commentaire">
+    {{ form_start(commentForm) }}
+    {{ form_row(commentForm.content , {'attr': {'placeholder' :" Votre commentaire "}}) }}
+    <button type="submit" class="btn btn-success"> Commenter </button><br><br>
+    {{ form_end(commentForm) }}
+
+    {% for comment in article.comments %}
+    <div class="ps-comment">
+        <div class="ps-comment__content">
+            <header>
+                <h4>{{ comment.author }} <span>{% if comment.createdAt %}{{ comment.createdAt|date('Y-m-d') }}{% endif %}</span>
+            </header>
+            <p> {{ comment.content | raw}}</p>
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                {% if(comment.author== app.user) %}
+
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Delete
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Alert </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Do you really want to delete your comment ?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <a href="{{ path('delete_comment',{'id': comment.id}) }}"><button type="button" class="btn btn-primary">Delete Comment</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% else %}
+
+
+                {% endif %}
+            {% elseif is_granted('IS_AUTHENTICATED_ANONYMOUSLY') %}
+                <br>
+
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+
+</section>
+
+
+{% endblock %}
+
+
+
+
+{% block js %}
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+
+        function onClickBtnLike(event){
+            event.preventDefault();
+
+            const url = this.href;
+            const spanCount = this.querySelector('span.js-likes');
+            const icone = this.querySelector('i');
+
+            axios.get(url).then(function(response) {
+                spanCount.textContent = response.data.likes;
+
+                if (icone.classList.contains('fas')) {
+                    icone.classList.replace('fas', 'far');
+                } else {
+                    icone.classList.replace('far','fas');
+                }
+            }).catch(function (error) {
+                if(error.response.status === 403) {
+                    window.alert("vous ne pouvez pas liker un article si vous n'êtes pas connecté !");
+                } else {
+                    window.alert("Une erreur s'est produit, reessayez plus tard");
+                }
+            });
+        }
+
+        document.querySelectorAll('a.js-like').forEach(function (link) {
+            link.addEventListener('click', onClickBtnLike);
+        })
+
+    </script>
+{% endblock %}
+
+
+
+
+
+
+
+

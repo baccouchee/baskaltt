@@ -15,4 +15,20 @@
         <br>
     </div>
     {% endfor %}
+    <aside class="ps-widget--sidebar">
+        <div class="ps-widget__header">
+            <h3>Recent Club</h3>
+        </div>
+
+
+        <div class="ps-widget__content">
+            {% for membre in membres %}
+                <div class="ps-post--sidebar">
+                    <div class="ps-post__content"><a class="ps-post__title" href="#">{{ membre.club.nomclub }}</a><span>{{ membre.club.emplacement }}</span></div>
+                    <br>
+                    <div class="ps-post__content"> <div class="ps-shoe--sidebar"><p> <a class="ps-btn" href="{{ path('mem_delete', { 'id': membre.id }) }}">ANNULER</a></p></div></div>
+                </div>
+            {% endfor %}
+        </div>
+    </aside>
 </div>

@@ -1,0 +1,46 @@
+{% extends 'baseAdmin.html.twig' %}
+{% block content %}
+    <div class="content mt-3">
+        <div class="animated fadeIn">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong class="card-title" style="font-size: 20px;"> Meeting numéro {{ meeting.id }} </strong>
+                        </div>
+                        <div class="card-body">
+                            <div class="vue-lists">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul style="font-size: 16px;">
+                                            <li>
+                                                <strong> Sujet du meeting : </strong> {{ meeting.sujet }}
+                                            </li>
+                                            <li>  <strong> Catégorie du meeting : </strong> {{ meeting.categorie }}</li>
+                                            <li>  <strong> Date de debut : </strong> {% if meeting.startsDate %}{{ meeting.startsDate|date('Y-m-d') }}{% endif %}</li>
+                                            <li>  <strong> Date de creation : </strong> {% if meeting.date %}{{ meeting.date|date('Y-m-d H:i:s') }}{% endif %}</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <table>
+                                <tr>
+                                    <td>          <a href="{{ path('meeting_edit', { 'id': meeting.id }) }}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Edit</a>
+                                    </td>
+                                    <td>
+
+                                        {{ form_start(delete_form) }}
+                                        <input type="submit" value="Supprimer" class="btn btn-danger btn-xs">
+                                        {{ form_end(delete_form) }}</td>
+                                </tr>
+                            </table>
+                        </div></div></div></div></div>
+        <a href="{{ path('meeting_index') }}" class="btn btn-outline-secondary">Liste des meetings</a>
+    </div>
+
+
+
+{% endblock %}
