@@ -1,0 +1,69 @@
+<style>
+    /*! CSS Used from: https://www.velib-metropole.fr/assets/paris-styles.cfb6dec6a4cf6e0ccffc.bundle.css */
+    *,::after,::before{box-sizing:border-box;}
+    img{vertical-align:middle;border-style:none;}
+    button{border-radius:0;}
+    button:focus{outline:-webkit-focus-ring-color auto 5px;outline:0;}
+    button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit;}
+    button{overflow:visible;}
+    button{text-transform:none;}
+    button,html [type=button]{-webkit-appearance:button;}
+    [type=button]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none;}
+    @media print{
+        *,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+        img{page-break-inside:avoid;}
+    }
+    .mapboxgl-popup-close-button{right:0;top:0;border:0;cursor:pointer;background-color:transparent;}
+    .mapboxgl-popup-close-button:hover{background-color:rgba(0,0,0,.05);}
+    .mapboxgl-popup-content{position:relative;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.1);padding:10px 10px 15px;pointer-events:auto;}
+    button{border:none;}
+    button:hover{cursor:pointer;}
+    .mapboxgl-popup-close-button{box-sizing:border-box;border-radius:50%;width:20px;height:20px;padding-top:1px;padding-left:4px;margin:12px 23px;color:#c3c3c3;position:absolute;text-align:center;font:700 16px/14px Tahoma,Verdana,sans-serif;}
+    .mapboxgl-popup-content{margin:0;box-shadow:0 3px 14px rgba(0,0,0,.4);border-radius:12px;padding-bottom:0;}
+    .popup-marker .content-popup{width:100%;color:#4a4a4a;font-size:135px;}
+    .popup-marker .content-popup .station-number{margin:10px 20px;}
+    .popup-marker .content-popup .row-container{margin-bottom:10px;}
+    .popup-marker .content-popup .row-container .station-name{margin-left:20px;display:inline-block;width:75%;}
+    .popup-marker .content-popup .station-infos{border-top:1px solid #f1f1f1;padding:0 16px 10px;}
+    .popup-marker .content-popup .station-infos .info{box-sizing:border-box;align-items:center;color:#4a4a4a;background-color:#f1f1f1;display:flex;justify-content:flex-start;margin-top:10px;padding:10px;}
+    .popup-marker .content-popup .station-infos .info-img{width:1000%;}
+    .popup-marker .content-popup .station-infos .info-data{margin-left:25px;}
+
+</style>
+
+<div class="popup-marker">
+    <div class="content-popup">
+        <div class="station-number">Station n°<strong>{{ s.id }}</strong></div>
+        <div class="row-container">
+            <div class="station-name">{{s.nomStation}}</div>
+        </div><!---->
+        <div class="station-infos">
+            <div class="info">
+                <div class="info-img">
+                    <img alt="velo meca" src={{ asset("Back/images/velo_meca_green@2x.png")}} width="180">
+                    {{ s.nbrVelo }} vélo(s) disponible(s)
+                </div>
+            <div class="info-data"></div>
+            </div>
+            <div class="info"><div class="info-img">
+                    <img alt="borne velo" src={{ asset("Back/images/borne_velo_violet@2x.png")}} width="180">
+                    {{ 20 - s.nbrVelo }} place(s)
+                </div>
+                <div class="info-data"></div>
+            </div>
+            <div class="info" >
+
+            <div class="ps-shoe--sidebar" >
+                {% if info is defined %}
+                    <div class="ps-shoe__content"><p style="color: green;"> {{ info }} </p></div>
+
+                {% else %}
+                    <div class="ps-shoe__content"><p> <a class="ps-btn" href="http://localhost/BaskelCht/web/app_dev.php/louerVeloM/{{ s.id }}/{{ userId }}" >LOUER</a></p></div>
+
+                {% endif %}
+
+            </div>
+
+            </div>
+        </div>
+    </div></div></div></div>
